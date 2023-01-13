@@ -10,7 +10,6 @@
   "scripts": {
     "build": "yarn workspace @patternfly/react-console build",
     "build:docs": "yarn workspace @patternfly/react-console docs:build",
-    "build:fed:packages": "yarn workspace @patternfly/react-console build:fed:packages",
     "start": "yarn build && concurrently --kill-others \"yarn workspace @patternfly/react-console docs:develop\"",
     "serve:docs": "yarn workspace @patternfly/react-console docs:serve",
     "clean": "yarn workspace @patternfly/react-console clean",
