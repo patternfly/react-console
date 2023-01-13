@@ -2,8 +2,8 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import { SerialConsole } from '../SerialConsole';
-import { constants } from '../../common/constants';
+import { SerialConsole } from './SerialConsole';
+import { constants } from '../common/constants';
 
 const { CONNECTED, DISCONNECTED, LOADING } = constants;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { SerialConsoleActions } from '../SerialConsoleActions';
+import { SerialConsoleActions } from './SerialConsoleActions';
 
 test('Render SerialConsoleActions', () => {
   const { asFragment } = render(<SerialConsoleActions onDisconnect={jest.fn()} onReset={jest.fn()} />);

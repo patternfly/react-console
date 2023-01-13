@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { XTerm } from '../XTerm';
+import { XTerm } from './XTerm';
 
 describe('XTerm', () => {
   beforeAll(() => {

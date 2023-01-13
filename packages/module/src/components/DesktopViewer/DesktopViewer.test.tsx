@@ -3,10 +3,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { DesktopViewer } from '../DesktopViewer';
-import { MoreInformationDefaultContent } from '../MoreInformationDefaultContent';
-import { generateDescriptorFile } from '../consoleDescriptorGenerator';
-import { constants } from '../../common/constants';
+import { DesktopViewer } from './DesktopViewer';
+import { MoreInformationDefaultContent } from './MoreInformationDefaultContent';
+import { generateDescriptorFile } from './consoleDescriptorGenerator';
+import { constants } from '../common/constants';
 
 const { SPICE_CONSOLE_TYPE, RDP_CONSOLE_TYPE, DEFAULT_RDP_PORT } = constants;
 

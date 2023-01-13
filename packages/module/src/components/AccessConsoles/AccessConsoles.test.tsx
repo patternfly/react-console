@@ -3,11 +3,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { AccessConsoles } from '../AccessConsoles';
-import { SerialConsole } from '../../SerialConsole';
-import { VncConsole } from '../../VncConsole';
-import { DesktopViewer } from '../../DesktopViewer';
-import { constants } from '../../common/constants';
+import { AccessConsoles } from './AccessConsoles';
+import { SerialConsole } from '../SerialConsole';
+import { VncConsole } from '../VncConsole';
+import { DesktopViewer } from '../DesktopViewer';
+import { constants } from '../common/constants';
 
 const { SERIAL_CONSOLE_TYPE, LOADING } = constants;
 
