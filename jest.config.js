@@ -11,6 +11,7 @@ module.exports = {
     '^.+\\.[jt]sx?$': 'babel-jest'
   },
   transformIgnorePatterns: ['node_modules/(?!@novnc)'],
+  setupFilesAfterEnv: ['<rootDir>/testSetup.ts'],
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/styleMock.js'
   },
