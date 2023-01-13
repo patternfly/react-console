@@ -1,20 +1,20 @@
 module.exports = {
-  '/extensions/react-console/design-guidelines': {
-    id: "react-console",
-    title: "react-console",
-    toc: [{"text":"Header"},[{"text":"Sub-header"}]],
+  '/extensions/access-consoles/extensions': {
+    id: "Access consoles",
+    title: "Access consoles",
+    toc: [[{"text":"Note"}],{"text":"Examples"},[{"text":"Basic Usage"}]],
+    examples: ["Basic Usage"],
     section: "extensions",
-    source: "design-guidelines",
-    Component: () => import(/* webpackChunkName: "extensions/react-console/design-guidelines/index" */ './extensions/react-console/design-guidelines')
+    source: "extensions",
+    Component: () => import(/* webpackChunkName: "extensions/access-consoles/extensions/index" */ './extensions/access-consoles/extensions')
   },
-  '/extensions/react-console/react': {
-    id: "react-console",
-    title: "react-console",
-    toc: [{"text":"Basic usage"},[{"text":"Example"},{"text":"Fullscreen example"}]],
-    examples: ["Example"],
-    fullscreenExamples: ["Fullscreen example"],
-    section: "extensions",
-    source: "react",
-    Component: () => import(/* webpackChunkName: "extensions/react-console/react/index" */ './extensions/react-console/react')
+  '/consoles/desktopviewer/extensions': {
+    id: "DesktopViewer",
+    title: "DesktopViewer",
+    toc: [[{"text":"Note"}],{"text":"Examples"},[{"text":"Basic Usage"}]],
+    examples: ["Basic Usage"],
+    section: "consoles",
+    source: "extensions",
+    Component: () => import(/* webpackChunkName: "consoles/desktopviewer/extensions/index" */ './consoles/desktopviewer/extensions')
   }
 };
