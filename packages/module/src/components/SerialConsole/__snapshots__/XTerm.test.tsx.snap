@@ -13,307 +13,428 @@ exports[`XTerm Render empty XTerm component 1`] = `
     >
       <div
         class="xterm-accessibility"
+        tabindex="0"
       >
         <div
           class="xterm-accessibility-tree"
-          role="document"
+          role="list"
         >
           <div
+            aria-posinset="1"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="2"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="3"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="4"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="5"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="6"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="7"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="8"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="9"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="10"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="11"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="12"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="13"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="14"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="15"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="16"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="17"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="18"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="19"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="20"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="21"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="22"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="23"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="24"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="25"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="26"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="27"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="28"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="29"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="30"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="31"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="32"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="33"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="34"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="35"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="36"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="37"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="38"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="39"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="40"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="41"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="42"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="43"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="44"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="45"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="46"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="47"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="48"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="49"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="50"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="51"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="52"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="53"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="54"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="55"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="56"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="57"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="58"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="59"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
           />
           <div
+            aria-posinset="60"
+            aria-setsize="60"
             role="listitem"
             style="height: 0px;"
             tabindex="-1"
@@ -372,6 +493,9 @@ exports[`XTerm Render empty XTerm component 1`] = `
         <canvas
           class="xterm-cursor-layer"
           style="z-index: 3;"
+        />
+        <div
+          class="xterm-decoration-container"
         />
       </div>
     </div>

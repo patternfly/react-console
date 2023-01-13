@@ -22,8 +22,8 @@
     "serve:a11y": "yarn workspace @patternfly/react-console serve:a11y"
   },
   "devDependencies": {
-    "react": "^17",
-    "react-dom": "^17",
+    "react": "^18",
+    "react-dom": "^18",
     "concurrently": "^5.3.0",
     "eslint": "^8.0.1",
     "eslint-plugin-import": "^2.25.2",
