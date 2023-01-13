@@ -26,9 +26,6 @@
     "url": "https://github.com/patternfly/react-console//issues"
   },
   "homepage": "https://github.com/patternfly/react-console/#readme",
-  "release": {
-    "branches": "main"
-  },
   "publishConfig": {
     "access": "public"
   },
