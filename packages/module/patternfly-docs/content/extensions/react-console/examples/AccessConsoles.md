@@ -1,6 +1,7 @@
 ---
 id: Access consoles
 section: extensions
+source: react
 propComponents: ['AccessConsoles']
 ouia: false
 beta: true
