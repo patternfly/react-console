@@ -87,6 +87,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
   vncLogging = 'warn',
   consoleContainerId,
   additionalButtons = [] as React.ReactNode[],
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   onDisconnected = () => {},
   onInitFailed,
   onSecurityFailure,
