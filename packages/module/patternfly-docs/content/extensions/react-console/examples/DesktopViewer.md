@@ -1,6 +1,7 @@
 ---
 id: DesktopViewer
 section: consoles
+source: react
 propComponents: ['DesktopViewer']
 ouia: false
 beta: true

@@ -48,6 +48,7 @@ export interface SerialConsoleProps extends XTermProps {
 const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
   onConnect,
   onDisconnect,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   onTitleChanged = () => {},
   onData,
   cols,
