@@ -14,7 +14,7 @@
     "test:a11y": "patternfly-a11y --config patternfly-a11y.config",
     "serve:a11y": "yarn serve coverage"
   },
-  "repository": "git+https://github.com/patternfly/react-console/.git",
+  "repository": "git+https://github.com/patternfly/react-console.git",
   "keywords": [
     "react",
     "patternfly",
