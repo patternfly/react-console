@@ -1,20 +1,12 @@
 module.exports = {
-  '/extensions/access-consoles/react': {
-    id: "Access consoles",
-    title: "Access consoles",
+  '/extensions/react-console/react': {
+    id: "React console",
+    title: "React console",
     toc: [[{"text":"Note"}],{"text":"Examples"},[{"text":"Basic Usage"}]],
     examples: ["Basic Usage"],
     section: "extensions",
+    subsection: "",
     source: "react",
-    Component: () => import(/* webpackChunkName: "extensions/access-consoles/react/index" */ './extensions/access-consoles/react')
-  },
-  '/consoles/desktopviewer/react': {
-    id: "DesktopViewer",
-    title: "DesktopViewer",
-    toc: [[{"text":"Note"}],{"text":"Examples"},[{"text":"Basic Usage"}]],
-    examples: ["Basic Usage"],
-    section: "consoles",
-    source: "react",
-    Component: () => import(/* webpackChunkName: "consoles/desktopviewer/react/index" */ './consoles/desktopviewer/react')
+    Component: () => import(/* webpackChunkName: "extensions/react-console/react/index" */ './extensions/react-console/react')
   }
 };

@@ -1,14 +1,15 @@
 ---
-id: Access consoles
+id: React console
 section: extensions
 source: react
-propComponents: ['AccessConsoles']
+propComponents: ['AccessConsoles', 'SerialConsole', 'VncConsole', 'DesktopViewer']
 ouia: false
 beta: true
+sourceLink: https://github.com/patternfly/react-console
 ---
 
 ### Note
-AccessConsoles lives in its own package at [`@patternfly/react-console`](https://www.npmjs.com/package/@patternfly/react-console)
+React console lives in its own package at [`@patternfly/react-console`](https://www.npmjs.com/package/@patternfly/react-console)
 
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
