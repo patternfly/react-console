@@ -2,6 +2,7 @@ import React from 'react';
 import { AutoLinkHeader, Example, Link as PatternflyThemeLink } from '@patternfly/documentation-framework/components';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from '../../../content/extensions/react-console/examples/./SerialConsoleCustom.jsx';
+import { debounce } from '@patternfly/react-core';
 const pageData = {
   "id": "Access consoles",
   "section": "extensions",
@@ -51,14 +52,15 @@ pageData.liveContext = {
   SerialConsole,
   VncConsole,
   DesktopViewer,
-  SerialConsoleCustom
+  SerialConsoleCustom,
+  debounce
 };
 pageData.relativeImports = {
   
 };
 pageData.examples = {
   'Basic Usage': props => 
-    <Example {...pageData} {...props} {...{"code":"import React from 'react';\nimport { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';\nimport { SerialConsoleCustom } from './SerialConsoleCustom.jsx';\n\nAccessConsolesVariants = () => {\n  const [status, setStatus] = React.useState('disconnected');\n  const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;\n  const ref = React.createRef();\n\n  return (\n    <AccessConsoles preselectedType=\"SerialConsole\">\n      <VncConsole host=\"localhost\" port=\"9090\" encrypt shared />\n      <SerialConsole\n        onConnect={() => {\n          setStatus('loading');\n          setConnected();\n        }}\n        status={status}\n        onDisconnect={() => setStatus('disconnected')}\n        onData={data => {\n          ref.current.onDataReceived(data);\n        }}\n        ref={ref}\n      />\n      <SerialConsoleCustom type='Serial Console pty2' />\n      <DesktopViewer spice={{ address: '127.0.0.1', port: '5900' }} vnc={{ address: '127.0.0.1', port: '5901' }} />\n    </AccessConsoles>\n  );\n};","title":"Basic Usage","lang":"js"}}>
+    <Example {...pageData} {...props} {...{"code":"import React from 'react';\nimport { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';\nimport { SerialConsoleCustom } from './SerialConsoleCustom.jsx';\nimport { debounce } from '@patternfly/react-core';\n\nAccessConsolesVariants = () => {\n  const [status, setStatus] = React.useState('disconnected');\n  const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;\n  const onConnect = React.useCallback(() => {\n    setStatus('loading');\n    setConnected();\n  }, [setConnected])\n  const onDisconnect = React.useCallback(() => setStatus('disconnected'), [])\n  const ref = React.createRef();\n\n  return (\n    <AccessConsoles preselectedType=\"SerialConsole\">\n      <VncConsole host=\"localhost\" port=\"9090\" encrypt shared />\n      <SerialConsole\n        onConnect={onConnect}\n        status={status}\n        onDisconnect={onDisconnect}\n        onData={data => {\n          ref.current.onDataReceived(data);\n        }}\n        ref={ref}\n      />\n      <SerialConsoleCustom type='Serial Console pty2' />\n      <DesktopViewer spice={{ address: '127.0.0.1', port: '5900' }} vnc={{ address: '127.0.0.1', port: '5901' }} />\n    </AccessConsoles>\n  );\n};","title":"Basic Usage","lang":"js"}}>
       
     </Example>
 };

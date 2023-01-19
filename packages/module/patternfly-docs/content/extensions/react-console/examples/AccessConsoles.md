@@ -12,6 +12,7 @@ AccessConsoles lives in its own package at [`@patternfly/react-console`](https:/
 
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
+import { debounce } from '@patternfly/react-core';
 
 ## Examples
 
@@ -20,22 +21,25 @@ import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
 import React from 'react';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
+import { debounce } from '@patternfly/react-core';
 
 AccessConsolesVariants = () => {
   const [status, setStatus] = React.useState('disconnected');
   const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;
+  const onConnect = React.useCallback(() => {
+    setStatus('loading');
+    setConnected();
+  }, [setConnected])
+  const onDisconnect = React.useCallback(() => setStatus('disconnected'), [])
   const ref = React.createRef();
 
   return (
     <AccessConsoles preselectedType="SerialConsole">
       <VncConsole host="localhost" port="9090" encrypt shared />
       <SerialConsole
-        onConnect={() => {
-          setStatus('loading');
-          setConnected();
-        }}
+        onConnect={onConnect}
         status={status}
-        onDisconnect={() => setStatus('disconnected')}
+        onDisconnect={onDisconnect}
         onData={data => {
           ref.current.onDataReceived(data);
         }}
