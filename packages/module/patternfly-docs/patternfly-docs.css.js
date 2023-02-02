@@ -6,5 +6,3 @@ import '@patternfly/patternfly/patternfly-addons.css';
 import '@patternfly/documentation-framework/global.css';
 
 // Add your extension CSS below
-
-import '@patternfly/react-styles/css/components/Consoles/SerialConsole.css';
