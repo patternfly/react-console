@@ -14,6 +14,11 @@ React console lives in its own package at [`@patternfly/react-console`](https://
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
 import { debounce } from '@patternfly/react-core';
+import '@patternfly/react-styles/src/css/components/Consoles/AccessConsoles.css';
+import '@patternfly/react-styles/src/css/components/Consoles/DesktopViewer.css';
+import '@patternfly/react-styles/src/css/components/Consoles/SerialConsole.css';
+import '@patternfly/react-styles/src/css/components/Consoles/VncConsole.css';
+import '@patternfly/react-styles/src/css/components/Consoles/xterm.css';
 
 ## Examples
 
