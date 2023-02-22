@@ -50,15 +50,28 @@ export const SpiceConsole: React.FunctionComponent<SpiceConsoleProps> = ({
   textCtrlAltDel
 }) => {
   let spiceStaticComponent: React.ReactNode;
-  let sc: any;
+  const scRef = React.useRef<any>();
   const [status, setStatus] = React.useState(CONNECTING);
+
+  const disconnect = React.useCallback(() => {
+    if (scRef.current) {
+      scRef.current.stop();
+      scRef.current = undefined;
+    }
+  }, [scRef]);
+
+  const onSpiceError = React.useCallback((e: any) => {
+    disconnect();
+    setStatus(DISCONNECTED);
+    onDisconnected(e);
+  }, [disconnect, setStatus, onDisconnected]);
 
   React.useEffect(() => {
     try {
       const protocol = encrypt ? 'wss' : 'ws';
       const uri = `${protocol}://${host}:${port}/${path}`;
 
-      sc = new SpiceMainConn({
+      scRef.current = new SpiceMainConn({
         uri,
         /* eslint-disable camelcase */
         screen_id: 'spice-screen',
@@ -71,25 +84,12 @@ export const SpiceConsole: React.FunctionComponent<SpiceConsoleProps> = ({
       disconnect();
     }
     return () => disconnect();
-  }, []);
-
-  const disconnect = () => {
-    if (sc) {
-      sc.stop();
-      sc = undefined;
-    }
-  };
+  }, [disconnect, encrypt, host, onInitFailed, onSpiceError, password, path, port]);
 
   const onCtrlAltDel = () => {
-    if (sc) {
+    if (scRef.current) {
       sendCtrlAltDel();
     }
-  };
-
-  const onSpiceError = (e: any) => {
-    disconnect();
-    setStatus(DISCONNECTED);
-    onDisconnected(e);
   };
 
   if (!spiceStaticComponent) {

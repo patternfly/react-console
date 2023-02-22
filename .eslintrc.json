@@ -50,6 +50,7 @@
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/unified-signatures": "error",
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "arrow-body-style": "error",
     "camelcase": [
       "error",
