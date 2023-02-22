@@ -3,7 +3,7 @@ module.exports = {
     id: "React console",
     title: "React console",
     toc: [[{"text":"Note"}],{"text":"Examples"},[{"text":"Basic Usage"}]],
-    examples: ["Basic Usage"],
+    fullscreenExamples: ["Basic Usage"],
     section: "extensions",
     subsection: "",
     source: "react",
