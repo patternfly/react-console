@@ -23,7 +23,7 @@ import '@patternfly/react-styles/src/css/components/Consoles/xterm.css';
 ## Examples
 
 ### Basic Usage
-```js
+```js isFullscreen
 import React from 'react';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
