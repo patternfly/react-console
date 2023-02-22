@@ -33,31 +33,25 @@
   },
   "dependencies": {
     "@novnc/novnc": "^1.3.0",
-    "@patternfly/react-core": "^4.273.3",
-    "@patternfly/react-styles": "^4.92.3",
+    "@patternfly/react-core": "^4.276.6",
+    "@patternfly/react-styles": "^4.92.6",
     "@spice-project/spice-html5": "^0.2.1",
     "@types/file-saver": "^2.0.1",
     "file-saver": "^1.3.8",
     "tslib": "^2.0.0",
     "xterm": "^4.8.1",
-    "xterm-addon-fit": "^0.2.1",
-    "@patternfly/patternfly": "4.224.1"
+    "xterm-addon-fit": "^0.2.1"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18",
     "react-dom": "^16.8 || ^17 || ^18"
   },
   "devDependencies": {
-    "@patternfly/documentation-framework": "^1.4.3",
-    "@patternfly/patternfly": "^4.217.1",
-    "@patternfly/react-table": "^4.111.4",
-    "@patternfly/react-code-editor": "^4.82.26",
+    "@patternfly/documentation-framework": "^1.8.1",
+    "@patternfly/patternfly": "^4.224.2",
+    "@patternfly/react-table": "^4.112.39",
+    "@patternfly/react-code-editor": "^4.82.113",
     "rimraf": "^2.6.2",
-    "typescript": "^4.7.4",
-    "react": "^16.8 || ^17 || ^18",
-    "react-dom": "^16.8 || ^17 || ^18",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@patternfly/patternfly-a11y": "4.3.1"
+    "@patternfly/patternfly-a11y": "^4.3.1"
   }
 }
