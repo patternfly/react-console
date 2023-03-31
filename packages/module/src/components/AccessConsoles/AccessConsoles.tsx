@@ -69,7 +69,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
       }
     });
 
-  const onToggle = (isOpen: boolean) => {
+  const onToggle = (_event: any, isOpen: boolean) => {
     setIsOpen(isOpen);
   };
 

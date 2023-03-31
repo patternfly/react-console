@@ -117,7 +117,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
     default:
       terminal = (
         <EmptyState>
-          <EmptyStateIcon variant="container" component={Spinner} />
+          <EmptyStateIcon  icon={Spinner} />
           <EmptyStateBody>{textLoading}</EmptyStateBody>
         </EmptyState>
       );

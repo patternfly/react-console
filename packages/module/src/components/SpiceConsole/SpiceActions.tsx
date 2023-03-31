@@ -1,5 +1,9 @@
 import React from 'react';
-import { Dropdown, DropdownItem, DropdownToggle } from '@patternfly/react-core';
+import {
+	Dropdown as DropdownDeprecated,
+	DropdownItem as DropdownItemDeprecated,
+	DropdownToggle as DropdownToggleDeprecated
+} from '@patternfly/react-core/deprecated';
 
 export interface SpiceActionsProps extends React.HTMLProps<HTMLDivElement> {
   /** Callback for when Ctrl+Alt+Delete item is selected */
@@ -17,7 +21,7 @@ export const SpiceActions: React.FunctionComponent<SpiceActionsProps> = ({
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Dropdown
+    <DropdownDeprecated
       id="console-send-shortcut"
       onSelect={() => {
         setIsOpen(!isOpen);
@@ -25,9 +29,9 @@ export const SpiceActions: React.FunctionComponent<SpiceActionsProps> = ({
       }}
       isOpen={isOpen}
       toggle={
-        <DropdownToggle onToggle={isDropdownOpen => setIsOpen(isDropdownOpen)}>{textSendShortcut}</DropdownToggle>
+        <DropdownToggleDeprecated onToggle={(_event, isDropdownOpen) => setIsOpen(isDropdownOpen)}>{textSendShortcut}</DropdownToggleDeprecated>
       }
-      dropdownItems={[<DropdownItem key="ctrl-alt-delete">{textCtrlAltDel}</DropdownItem>]}
+      dropdownItems={[<DropdownItemDeprecated key="ctrl-alt-delete">{textCtrlAltDel}</DropdownItemDeprecated>]}
     />
   );
 };

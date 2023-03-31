@@ -230,7 +230,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     default:
       emptyState = (
         <EmptyState>
-          <EmptyStateIcon variant="container" component={Spinner} />
+          <EmptyStateIcon  icon={Spinner} />
           <EmptyStateBody>{textConnecting}</EmptyStateBody>
         </EmptyState>
       );
