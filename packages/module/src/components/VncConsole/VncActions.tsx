@@ -1,6 +1,14 @@
 import React from 'react';
 import { css } from '@patternfly/react-styles';
-import { Dropdown, DropdownItem, DropdownToggle, Button, ButtonVariant } from '@patternfly/react-core';
+import {
+	Button,
+	ButtonVariant
+} from '@patternfly/react-core';
+import {
+	Dropdown as DropdownDeprecated,
+	DropdownItem as DropdownItemDeprecated,
+	DropdownToggle as DropdownToggleDeprecated
+} from '@patternfly/react-core/deprecated';
 
 import styles from '@patternfly/react-styles/css/components/Consoles/VncConsole';
 
@@ -27,19 +35,19 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
   const toolbar = (
     <div className={css(styles.consoleActionsVnc)}>
       {additionalButtons}
-      <Dropdown
+      <DropdownDeprecated
         id="pf-c-console__send-shortcut"
         onSelect={() => setIsOpen(false)}
         toggle={
-          <DropdownToggle id="pf-c-console__actions-vnc-toggle-id" onToggle={() => setIsOpen(!isOpen)}>
+          <DropdownToggleDeprecated id="pf-c-console__actions-vnc-toggle-id" onToggle={() => setIsOpen(!isOpen)}>
             {textSendShortcut}
-          </DropdownToggle>
+          </DropdownToggleDeprecated>
         }
         isOpen={isOpen}
         dropdownItems={[
-          <DropdownItem onClick={onCtrlAltDel} key="ctrl-alt-delete">
+          <DropdownItemDeprecated onClick={onCtrlAltDel} key="ctrl-alt-delete">
             {textCtrlAltDel}
-          </DropdownItem>
+          </DropdownItemDeprecated>
         ]}
       />
       <Button variant={ButtonVariant.secondary} onClick={onDisconnect}>

@@ -14,7 +14,6 @@ const pageData = {
   "section": "extensions",
   "subsection": "",
   "source": "react",
-  "tabName": null,
   "slug": "/extensions/react-console/react",
   "sourceLink": "https://github.com/patternfly/react-console",
   "relPath": "packages/module/patternfly-docs/content/extensions/react-console/examples/ReactConsole.md",

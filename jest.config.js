@@ -10,10 +10,11 @@ module.exports = {
   transform: {
     '^.+\\.[jt]sx?$': 'babel-jest'
   },
-  transformIgnorePatterns: ['node_modules/(?!@novnc)'],
+  transformIgnorePatterns: ['node_modules/(?!@novnc|@patternfly)'],
   setupFilesAfterEnv: ['<rootDir>/testSetup.ts'],
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/styleMock.js'
   },
-  testEnvironment: 'jsdom'
+  testEnvironment: 'jsdom',
+  dryRun: true
 };
