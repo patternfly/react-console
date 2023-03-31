@@ -13,6 +13,6 @@ module.exports = {
     '@semantic-release/github',
     '@semantic-release/npm'
   ],
-  tagFormat: 'v${version}',
+  tagFormat: 'prerelease-v${version}',
   dryRun: true
 };
