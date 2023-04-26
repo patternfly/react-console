@@ -34,8 +34,8 @@
   },
   "dependencies": {
     "@novnc/novnc": "^1.3.0",
-    "@patternfly/react-core": "^5.0.0-alpha.50",
-    "@patternfly/react-styles": "^5.0.0-alpha.5",
+    "@patternfly/react-core": "^5.0.0-alpha.72",
+    "@patternfly/react-styles": "^5.0.0-alpha.7",
     "@spice-project/spice-html5": "^0.2.1",
     "file-saver": "^1.3.8",
     "xterm": "^4.8.1",
