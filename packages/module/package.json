@@ -46,12 +46,12 @@
     "react-dom": "^16.8 || ^17 || ^18"
   },
   "devDependencies": {
-    "@patternfly/documentation-framework": "^2.0.0-alpha.12",
-    "@patternfly/patternfly": "^5.0.0-alpha.37",
-    "@patternfly/react-table": "^5.0.0-alpha.51",
-    "@patternfly/react-code-editor": "^5.0.0-alpha.51",
-    "rimraf": "^2.6.2",
+    "@patternfly/documentation-framework": "^2.0.0-alpha.29",
+    "@patternfly/patternfly": "^5.0.0-alpha.43",
     "@patternfly/patternfly-a11y": "^4.3.1",
+    "@patternfly/react-code-editor": "^5.0.0-alpha.79",
+    "@patternfly/react-table": "^5.0.0-alpha.80",
+    "rimraf": "^2.6.2",
     "serve": "^14.1.2"
   }
 }
