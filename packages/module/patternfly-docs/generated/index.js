@@ -7,6 +7,8 @@ module.exports = {
     section: "extensions",
     subsection: "",
     source: "react",
+    tabName: null,
+    beta: true,
     Component: () => import(/* webpackChunkName: "extensions/react-console/react/index" */ './extensions/react-console/react')
   }
 };

@@ -3,7 +3,7 @@
 exports[`AccessConsoles Empty 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`AccessConsoles Empty 1`] = `
 exports[`AccessConsoles with DesktopViewer 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   />
 </DocumentFragment>
 `;
@@ -19,13 +19,13 @@ exports[`AccessConsoles with DesktopViewer 1`] = `
 exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   >
     <div
-      class="pf-c-console__actions"
+      class="pf-v5-c-console__actions"
     >
       <div
-        class="pf-c-select"
+        class="pf-v5-c-select"
         data-ouia-component-id="OUIA-Generated-Select-single-1"
         data-ouia-component-type="PF4/Select"
         data-ouia-safe="true"
@@ -34,26 +34,26 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="Options menu"
-          aria-labelledby=" pf-c-console__type-selector"
-          class="pf-c-select__toggle"
-          id="pf-c-console__type-selector"
+          aria-labelledby=" pf-v5-c-console__type-selector"
+          class="pf-v5-c-select__toggle"
+          id="pf-v5-c-console__type-selector"
           type="button"
         >
           <div
-            class="pf-c-select__toggle-wrapper"
+            class="pf-v5-c-select__toggle-wrapper"
           >
             <span
-              class="pf-c-select__toggle-text"
+              class="pf-v5-c-select__toggle-text"
             >
               Select console type
             </span>
           </div>
           <span
-            class="pf-c-select__toggle-arrow"
+            class="pf-v5-c-select__toggle-arrow"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
               role="img"
               viewBox="0 0 320 512"
@@ -73,7 +73,7 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   />
 </DocumentFragment>
 `;
@@ -81,7 +81,7 @@ exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 exports[`AccessConsoles with VncConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   />
 </DocumentFragment>
 `;
@@ -89,14 +89,14 @@ exports[`AccessConsoles with VncConsole as a single child 1`] = `
 exports[`AccessConsoles with preselected SerialConsole 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   >
     <div
-      class="pf-c-console__actions-serial"
+      class="pf-v5-c-console__actions-serial"
     >
       <button
         aria-disabled="false"
-        class="pf-c-button pf-m-secondary"
+        class="pf-v5-c-button pf-m-secondary"
         data-ouia-component-id="OUIA-Generated-Button-secondary-1"
         data-ouia-component-type="PF4/Button"
         data-ouia-safe="true"
@@ -106,7 +106,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
       <button
         aria-disabled="false"
-        class="pf-c-button pf-m-secondary"
+        class="pf-v5-c-button pf-m-secondary"
         data-ouia-component-id="OUIA-Generated-Button-secondary-2"
         data-ouia-component-type="PF4/Button"
         data-ouia-safe="true"
@@ -116,36 +116,40 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
     </div>
     <div
-      class="pf-c-console__serial"
+      class="pf-v5-c-console__serial"
     >
       <div
-        class="pf-c-empty-state"
+        class="pf-v5-c-empty-state"
       >
         <div
-          class="pf-c-empty-state__content"
+          class="pf-v5-c-empty-state__content"
         >
           <div
-            class="pf-c-empty-state__icon"
+            class="pf-v5-c-empty-state__header"
           >
-            <svg
-              aria-hidden="false"
-              aria-label="Contents"
-              aria-valuetext="Loading..."
-              class="pf-c-spinner pf-m-xl"
-              role="progressbar"
-              viewBox="0 0 100 100"
+            <div
+              class="pf-v5-c-empty-state__icon"
             >
-              <circle
-                class="pf-c-spinner__path"
-                cx="50"
-                cy="50"
-                fill="none"
-                r="45"
-              />
-            </svg>
+              <svg
+                aria-hidden="false"
+                aria-label="Contents"
+                aria-valuetext="Loading..."
+                class="pf-v5-c-spinner pf-m-xl"
+                role="progressbar"
+                viewBox="0 0 100 100"
+              >
+                <circle
+                  class="pf-v5-c-spinner__path"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  r="45"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            class="pf-c-empty-state__body"
+            class="pf-v5-c-empty-state__body"
           >
             Loading ...
           </div>
@@ -159,7 +163,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
 exports[`AccessConsoles with wrapped SerialConsole as a child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console"
+    class="pf-v5-c-console"
   >
     <p>
       Serial console text

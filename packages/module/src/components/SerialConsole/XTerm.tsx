@@ -131,6 +131,6 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
 
   // ensure react never reuses this div by keying it with the terminal widget
   // Workaround for xtermjs/xterm.js#3172
-  return <div ref={ref} className="pf-c-console__xterm" role="list" onFocus={onFocusIn} onBlur={onFocusOut} />;
+  return <div ref={ref} className="pf-v5-c-console__xterm" role="list" onFocus={onFocusIn} onBlur={onFocusOut} />;
 };
 XTerm.displayName = 'XTerm';

@@ -1,7 +1,15 @@
 import React from 'react';
 
 import { css } from '@patternfly/react-styles';
-import { Button, EmptyState, EmptyStateBody, EmptyStateIcon, Spinner } from '@patternfly/react-core';
+import {
+  Button,
+  EmptyState,
+  EmptyStateBody,
+  EmptyStateIcon,
+  Spinner,
+  EmptyStateHeader,
+  EmptyStateFooter
+} from '@patternfly/react-core';
 
 import { initLogging } from '@novnc/novnc/core/util/logging';
 /** Has bad types. https://github.com/larryprice/novnc-core/issues/5 */
@@ -220,9 +228,11 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
       emptyState = (
         <EmptyState>
           <EmptyStateBody>{textDisconnected}</EmptyStateBody>
-          <Button variant="primary" onClick={connect}>
-            {textConnect}
-          </Button>
+          <EmptyStateFooter>
+            <Button variant="primary" onClick={connect}>
+              {textConnect}
+            </Button>
+          </EmptyStateFooter>
         </EmptyState>
       );
       break;
@@ -230,7 +240,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     default:
       emptyState = (
         <EmptyState>
-          <EmptyStateIcon  icon={Spinner} />
+          <EmptyStateHeader icon={<EmptyStateIcon icon={Spinner} />} />
           <EmptyStateBody>{textConnecting}</EmptyStateBody>
         </EmptyState>
       );

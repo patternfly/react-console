@@ -1,13 +1,10 @@
 import React from 'react';
 import { css } from '@patternfly/react-styles';
+import { Button, ButtonVariant } from '@patternfly/react-core';
 import {
-	Button,
-	ButtonVariant
-} from '@patternfly/react-core';
-import {
-	Dropdown as DropdownDeprecated,
-	DropdownItem as DropdownItemDeprecated,
-	DropdownToggle as DropdownToggleDeprecated
+  Dropdown as DropdownDeprecated,
+  DropdownItem as DropdownItemDeprecated,
+  DropdownToggle as DropdownToggleDeprecated
 } from '@patternfly/react-core/deprecated';
 
 import styles from '@patternfly/react-styles/css/components/Consoles/VncConsole';
@@ -36,10 +33,10 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
     <div className={css(styles.consoleActionsVnc)}>
       {additionalButtons}
       <DropdownDeprecated
-        id="pf-c-console__send-shortcut"
+        id="pf-v5-c-console__send-shortcut"
         onSelect={() => setIsOpen(false)}
         toggle={
-          <DropdownToggleDeprecated id="pf-c-console__actions-vnc-toggle-id" onToggle={() => setIsOpen(!isOpen)}>
+          <DropdownToggleDeprecated id="pf-v5-c-console__actions-vnc-toggle-id" onToggle={() => setIsOpen(!isOpen)}>
             {textSendShortcut}
           </DropdownToggleDeprecated>
         }

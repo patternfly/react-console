@@ -97,13 +97,13 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
   // RDP button is rendered only if the protocol is available
   // If none of Spice or VNC is available, the .vv button is disabled (but rendered)
   return (
-    <div className="pf-c-console__remote-viewer">
-      <div className="pf-c-console__remote-viewer-launch">
-        <Button className="pf-c-console__remote-viewer-launch-vv" onClick={onClickVV} isDisabled={!_console}>
+    <div className="pf-v5-c-console__remote-viewer">
+      <div className="pf-v5-c-console__remote-viewer-launch">
+        <Button className="pf-v5-c-console__remote-viewer-launch-vv" onClick={onClickVV} isDisabled={!_console}>
           {textConnectWithRemoteViewer}
         </Button>
         {!!rdp && (
-          <Button onClick={onClickRDP} className="pf-c-console__remote-viewer-launch-rdp">
+          <Button onClick={onClickRDP} className="pf-v5-c-console__remote-viewer-launch-rdp">
             {textConnectWithRDP}
           </Button>
         )}
@@ -112,7 +112,7 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
         <ExpandableSection
           toggleText={textMoreInfo}
           isExpanded={isExpandedDefault}
-          onToggle={isExpanded => setIsExpandedDefault(isExpanded)}
+          onToggle={(_event, isExpanded) => setIsExpandedDefault(isExpanded)}
         >
           <MoreInformationDefaultContent textMoreInfoContent={textMoreInfoContent} />
         </ExpandableSection>
@@ -121,7 +121,7 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
         <ExpandableSection
           toggleText={textMoreRDPInfo}
           isExpanded={isExpandedRDP}
-          onToggle={isExpanded => setIsExpandedRDP(isExpanded)}
+          onToggle={(_event, isExpanded) => setIsExpandedRDP(isExpanded)}
         >
           <MoreInformationDefaultRDPContent textMoreRDPInfoContent={textMoreRDPInfoContent} />
         </ExpandableSection>
