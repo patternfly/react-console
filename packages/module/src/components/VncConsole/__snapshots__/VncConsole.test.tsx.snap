@@ -3,37 +3,41 @@
 exports[`placeholder render test 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__vnc"
+    class="pf-v5-c-console__vnc"
   >
     <div>
       <div
-        class="pf-c-empty-state"
+        class="pf-v5-c-empty-state"
       >
         <div
-          class="pf-c-empty-state__content"
+          class="pf-v5-c-empty-state__content"
         >
           <div
-            class="pf-c-empty-state__icon"
+            class="pf-v5-c-empty-state__header"
           >
-            <svg
-              aria-hidden="false"
-              aria-label="Contents"
-              aria-valuetext="Loading..."
-              class="pf-c-spinner pf-m-xl"
-              role="progressbar"
-              viewBox="0 0 100 100"
+            <div
+              class="pf-v5-c-empty-state__icon"
             >
-              <circle
-                class="pf-c-spinner__path"
-                cx="50"
-                cy="50"
-                fill="none"
-                r="45"
-              />
-            </svg>
+              <svg
+                aria-hidden="false"
+                aria-label="Contents"
+                aria-valuetext="Loading..."
+                class="pf-v5-c-spinner pf-m-xl"
+                role="progressbar"
+                viewBox="0 0 100 100"
+              >
+                <circle
+                  class="pf-v5-c-spinner__path"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  r="45"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            class="pf-c-empty-state__body"
+            class="pf-v5-c-empty-state__body"
           >
             Connecting
           </div>

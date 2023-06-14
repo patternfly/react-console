@@ -15,113 +15,113 @@ exports[`DesktopViewer default MoreInformationContent 1`] = `
      is available for most operating systems. To install it, search for it in GNOME Software or run the following:
   </p>
   <dl
-    class="pf-c-description-list pf-m-horizontal"
+    class="pf-v5-c-description-list pf-m-horizontal"
   >
     <div
-      class="pf-c-description-list__group"
+      class="pf-v5-c-description-list__group"
     >
       <dt
-        class="pf-c-description-list__term"
+        class="pf-v5-c-description-list__term"
       >
         <span
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           RHEL, CentOS
         </span>
       </dt>
       <dd
-        class="pf-c-description-list__description"
+        class="pf-v5-c-description-list__description"
       >
         <div
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           sudo yum install virt-viewer
         </div>
       </dd>
     </div>
     <div
-      class="pf-c-description-list__group"
+      class="pf-v5-c-description-list__group"
     >
       <dt
-        class="pf-c-description-list__term"
+        class="pf-v5-c-description-list__term"
       >
         <span
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           Fedora
         </span>
       </dt>
       <dd
-        class="pf-c-description-list__description"
+        class="pf-v5-c-description-list__description"
       >
         <div
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           sudo dnf install virt-viewer
         </div>
       </dd>
     </div>
     <div
-      class="pf-c-description-list__group"
+      class="pf-v5-c-description-list__group"
     >
       <dt
-        class="pf-c-description-list__term"
+        class="pf-v5-c-description-list__term"
       >
         <span
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           SLE, openSUSE
         </span>
       </dt>
       <dd
-        class="pf-c-description-list__description"
+        class="pf-v5-c-description-list__description"
       >
         <div
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           sudo zypper install virt-viewer
         </div>
       </dd>
     </div>
     <div
-      class="pf-c-description-list__group"
+      class="pf-v5-c-description-list__group"
     >
       <dt
-        class="pf-c-description-list__term"
+        class="pf-v5-c-description-list__term"
       >
         <span
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           Ubuntu, Debian
         </span>
       </dt>
       <dd
-        class="pf-c-description-list__description"
+        class="pf-v5-c-description-list__description"
       >
         <div
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           sudo apt-get install virt-viewer
         </div>
       </dd>
     </div>
     <div
-      class="pf-c-description-list__group"
+      class="pf-v5-c-description-list__group"
     >
       <dt
-        class="pf-c-description-list__term"
+        class="pf-v5-c-description-list__term"
       >
         <span
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           Windows
         </span>
       </dt>
       <dd
-        class="pf-c-description-list__description"
+        class="pf-v5-c-description-list__description"
       >
         <div
-          class="pf-c-description-list__text"
+          class="pf-v5-c-description-list__text"
         >
           <div>
             Download the MSI from 
@@ -143,19 +143,19 @@ exports[`DesktopViewer default MoreInformationContent 1`] = `
 exports[`DesktopViewer empty 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__desktop-viewer"
+    class="pf-v5-c-console__desktop-viewer"
   >
     <div
-      class="pf-c-console__remote-viewer"
+      class="pf-v5-c-console__remote-viewer"
     >
       <div
-        class="pf-c-console__remote-viewer-launch"
+        class="pf-v5-c-console__remote-viewer-launch"
       >
         <button
           aria-disabled="true"
-          class="pf-c-button pf-m-primary pf-m-disabled pf-c-console__remote-viewer-launch-vv"
+          class="pf-v5-c-button pf-m-primary pf-m-disabled pf-v5-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-1"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           disabled=""
           type="button"
@@ -165,12 +165,12 @@ exports[`DesktopViewer empty 1`] = `
       </div>
     </div>
     <div
-      class="pf-c-console__manual-connection"
+      class="pf-v5-c-console__manual-connection"
     >
       <h2
-        class="pf-c-title pf-m-3xl"
+        class="pf-v5-c-title pf-m-3xl"
         data-ouia-component-id="OUIA-Generated-Title-1"
-        data-ouia-component-type="PF4/Title"
+        data-ouia-component-type="PF5/Title"
         data-ouia-safe="true"
       >
         Manual Connection
@@ -179,7 +179,7 @@ exports[`DesktopViewer empty 1`] = `
         No connection available.
       </p>
       <dl
-        class="pf-c-description-list"
+        class="pf-v5-c-description-list"
       />
     </div>
   </div>
@@ -189,19 +189,19 @@ exports[`DesktopViewer empty 1`] = `
 exports[`DesktopViewer with Spice and VNC 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__desktop-viewer"
+    class="pf-v5-c-console__desktop-viewer"
   >
     <div
-      class="pf-c-console__remote-viewer"
+      class="pf-v5-c-console__remote-viewer"
     >
       <div
-        class="pf-c-console__remote-viewer-launch"
+        class="pf-v5-c-console__remote-viewer-launch"
       >
         <button
           aria-disabled="false"
-          class="pf-c-button pf-m-primary pf-c-console__remote-viewer-launch-vv"
+          class="pf-v5-c-button pf-m-primary pf-v5-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-2"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           type="button"
         >
@@ -209,22 +209,24 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         </button>
       </div>
       <div
-        class="pf-c-expandable-section"
+        class="pf-v5-c-expandable-section"
       >
         <button
           aria-expanded="false"
-          class="pf-c-expandable-section__toggle"
+          class="pf-v5-c-expandable-section__toggle"
           type="button"
         >
           <span
-            class="pf-c-expandable-section__toggle-icon"
+            class="pf-v5-c-expandable-section__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
+              height="1em"
               role="img"
               viewBox="0 0 256 512"
+              width="1em"
             >
               <path
                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
@@ -232,124 +234,124 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
             </svg>
           </span>
           <span
-            class="pf-c-expandable-section__toggle-text"
+            class="pf-v5-c-expandable-section__toggle-text"
           >
             Remote Viewer Details
           </span>
         </button>
         <div
-          class="pf-c-expandable-section__content"
+          class="pf-v5-c-expandable-section__content"
           hidden=""
           id=""
         >
           <dl
-            class="pf-c-description-list pf-m-horizontal"
+            class="pf-v5-c-description-list pf-m-horizontal"
           >
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   RHEL, CentOS
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo yum install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Fedora
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo dnf install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   SLE, openSUSE
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo zypper install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Ubuntu, Debian
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo apt-get install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Windows
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   <div>
                     Download the MSI from 
@@ -369,12 +371,12 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
       </div>
     </div>
     <div
-      class="pf-c-console__manual-connection"
+      class="pf-v5-c-console__manual-connection"
     >
       <h2
-        class="pf-c-title pf-m-3xl"
+        class="pf-v5-c-title pf-m-3xl"
         data-ouia-component-id="OUIA-Generated-Title-2"
-        data-ouia-component-type="PF4/Title"
+        data-ouia-component-type="PF5/Title"
         data-ouia-safe="true"
       >
         Manual Connection
@@ -383,113 +385,113 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         Connect with any viewer application for following protocols
       </p>
       <dl
-        class="pf-c-description-list"
+        class="pf-v5-c-description-list"
       >
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               Address
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               my.host.com
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5900
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5901
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5902
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5903
             </div>
@@ -504,19 +506,19 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__desktop-viewer"
+    class="pf-v5-c-console__desktop-viewer"
   >
     <div
-      class="pf-c-console__remote-viewer"
+      class="pf-v5-c-console__remote-viewer"
     >
       <div
-        class="pf-c-console__remote-viewer-launch"
+        class="pf-v5-c-console__remote-viewer-launch"
       >
         <button
           aria-disabled="false"
-          class="pf-c-button pf-m-primary pf-c-console__remote-viewer-launch-vv"
+          class="pf-v5-c-button pf-m-primary pf-v5-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-5"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           type="button"
         >
@@ -524,9 +526,9 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         </button>
         <button
           aria-disabled="false"
-          class="pf-c-button pf-m-primary pf-c-console__remote-viewer-launch-rdp"
+          class="pf-v5-c-button pf-m-primary pf-v5-c-console__remote-viewer-launch-rdp"
           data-ouia-component-id="OUIA-Generated-Button-primary-6"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           type="button"
         >
@@ -534,22 +536,24 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         </button>
       </div>
       <div
-        class="pf-c-expandable-section"
+        class="pf-v5-c-expandable-section"
       >
         <button
           aria-expanded="false"
-          class="pf-c-expandable-section__toggle"
+          class="pf-v5-c-expandable-section__toggle"
           type="button"
         >
           <span
-            class="pf-c-expandable-section__toggle-icon"
+            class="pf-v5-c-expandable-section__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
+              height="1em"
               role="img"
               viewBox="0 0 256 512"
+              width="1em"
             >
               <path
                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
@@ -557,124 +561,124 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
             </svg>
           </span>
           <span
-            class="pf-c-expandable-section__toggle-text"
+            class="pf-v5-c-expandable-section__toggle-text"
           >
             Remote Viewer Details
           </span>
         </button>
         <div
-          class="pf-c-expandable-section__content"
+          class="pf-v5-c-expandable-section__content"
           hidden=""
           id=""
         >
           <dl
-            class="pf-c-description-list pf-m-horizontal"
+            class="pf-v5-c-description-list pf-m-horizontal"
           >
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   RHEL, CentOS
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo yum install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Fedora
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo dnf install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   SLE, openSUSE
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo zypper install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Ubuntu, Debian
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo apt-get install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Windows
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   <div>
                     Download the MSI from 
@@ -693,22 +697,24 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         </div>
       </div>
       <div
-        class="pf-c-expandable-section"
+        class="pf-v5-c-expandable-section"
       >
         <button
           aria-expanded="false"
-          class="pf-c-expandable-section__toggle"
+          class="pf-v5-c-expandable-section__toggle"
           type="button"
         >
           <span
-            class="pf-c-expandable-section__toggle-icon"
+            class="pf-v5-c-expandable-section__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
+              height="1em"
               role="img"
               viewBox="0 0 256 512"
+              width="1em"
             >
               <path
                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
@@ -716,25 +722,25 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
             </svg>
           </span>
           <span
-            class="pf-c-expandable-section__toggle-text"
+            class="pf-v5-c-expandable-section__toggle-text"
           >
             Remote Desktop Details
           </span>
         </button>
         <div
-          class="pf-c-expandable-section__content"
+          class="pf-v5-c-expandable-section__content"
           hidden=""
           id=""
         />
       </div>
     </div>
     <div
-      class="pf-c-console__manual-connection"
+      class="pf-v5-c-console__manual-connection"
     >
       <h2
-        class="pf-c-title pf-m-3xl"
+        class="pf-v5-c-title pf-m-3xl"
         data-ouia-component-id="OUIA-Generated-Title-4"
-        data-ouia-component-type="PF4/Title"
+        data-ouia-component-type="PF5/Title"
         data-ouia-safe="true"
       >
         Manual Connection
@@ -743,157 +749,157 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         Connect with any viewer application for following protocols
       </p>
       <dl
-        class="pf-c-description-list"
+        class="pf-v5-c-description-list"
       >
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               Address
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               my.host.com
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               RDP Address
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               my.differenthost.com
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5900
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5901
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5902
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5903
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               RDP Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               1234
             </div>
@@ -908,19 +914,19 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__desktop-viewer"
+    class="pf-v5-c-console__desktop-viewer"
   >
     <div
-      class="pf-c-console__remote-viewer"
+      class="pf-v5-c-console__remote-viewer"
     >
       <div
-        class="pf-c-console__remote-viewer-launch"
+        class="pf-v5-c-console__remote-viewer-launch"
       >
         <button
           aria-disabled="false"
-          class="pf-c-button pf-m-primary pf-c-console__remote-viewer-launch-vv"
+          class="pf-v5-c-button pf-m-primary pf-v5-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-3"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           type="button"
         >
@@ -928,9 +934,9 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         </button>
         <button
           aria-disabled="false"
-          class="pf-c-button pf-m-primary pf-c-console__remote-viewer-launch-rdp"
+          class="pf-v5-c-button pf-m-primary pf-v5-c-console__remote-viewer-launch-rdp"
           data-ouia-component-id="OUIA-Generated-Button-primary-4"
-          data-ouia-component-type="PF4/Button"
+          data-ouia-component-type="PF5/Button"
           data-ouia-safe="true"
           type="button"
         >
@@ -938,22 +944,24 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         </button>
       </div>
       <div
-        class="pf-c-expandable-section"
+        class="pf-v5-c-expandable-section"
       >
         <button
           aria-expanded="false"
-          class="pf-c-expandable-section__toggle"
+          class="pf-v5-c-expandable-section__toggle"
           type="button"
         >
           <span
-            class="pf-c-expandable-section__toggle-icon"
+            class="pf-v5-c-expandable-section__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
+              height="1em"
               role="img"
               viewBox="0 0 256 512"
+              width="1em"
             >
               <path
                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
@@ -961,124 +969,124 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
             </svg>
           </span>
           <span
-            class="pf-c-expandable-section__toggle-text"
+            class="pf-v5-c-expandable-section__toggle-text"
           >
             Remote Viewer Details
           </span>
         </button>
         <div
-          class="pf-c-expandable-section__content"
+          class="pf-v5-c-expandable-section__content"
           hidden=""
           id=""
         >
           <dl
-            class="pf-c-description-list pf-m-horizontal"
+            class="pf-v5-c-description-list pf-m-horizontal"
           >
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   RHEL, CentOS
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo yum install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Fedora
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo dnf install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   SLE, openSUSE
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo zypper install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Ubuntu, Debian
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   sudo apt-get install virt-viewer
                 </div>
               </dd>
             </div>
             <div
-              class="pf-c-description-list__group"
+              class="pf-v5-c-description-list__group"
             >
               <dt
-                class="pf-c-description-list__term"
+                class="pf-v5-c-description-list__term"
               >
                 <span
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   Windows
                 </span>
               </dt>
               <dd
-                class="pf-c-description-list__description"
+                class="pf-v5-c-description-list__description"
               >
                 <div
-                  class="pf-c-description-list__text"
+                  class="pf-v5-c-description-list__text"
                 >
                   <div>
                     Download the MSI from 
@@ -1097,22 +1105,24 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         </div>
       </div>
       <div
-        class="pf-c-expandable-section"
+        class="pf-v5-c-expandable-section"
       >
         <button
           aria-expanded="false"
-          class="pf-c-expandable-section__toggle"
+          class="pf-v5-c-expandable-section__toggle"
           type="button"
         >
           <span
-            class="pf-c-expandable-section__toggle-icon"
+            class="pf-v5-c-expandable-section__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-svg"
+              class="pf-v5-svg"
               fill="currentColor"
+              height="1em"
               role="img"
               viewBox="0 0 256 512"
+              width="1em"
             >
               <path
                 d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
@@ -1120,25 +1130,25 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
             </svg>
           </span>
           <span
-            class="pf-c-expandable-section__toggle-text"
+            class="pf-v5-c-expandable-section__toggle-text"
           >
             Remote Desktop Details
           </span>
         </button>
         <div
-          class="pf-c-expandable-section__content"
+          class="pf-v5-c-expandable-section__content"
           hidden=""
           id=""
         />
       </div>
     </div>
     <div
-      class="pf-c-console__manual-connection"
+      class="pf-v5-c-console__manual-connection"
     >
       <h2
-        class="pf-c-title pf-m-3xl"
+        class="pf-v5-c-title pf-m-3xl"
         data-ouia-component-id="OUIA-Generated-Title-3"
-        data-ouia-component-type="PF4/Title"
+        data-ouia-component-type="PF5/Title"
         data-ouia-safe="true"
       >
         Manual Connection
@@ -1147,135 +1157,135 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         Connect with any viewer application for following protocols
       </p>
       <dl
-        class="pf-c-description-list"
+        class="pf-v5-c-description-list"
       >
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               Address
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               my.host.com
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5900
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               SPICE TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5901
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5902
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               VNC TLS Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               5903
             </div>
           </dd>
         </div>
         <div
-          class="pf-c-description-list__group"
+          class="pf-v5-c-description-list__group"
         >
           <dt
-            class="pf-c-description-list__term"
+            class="pf-v5-c-description-list__term"
           >
             <span
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               RDP Port
             </span>
           </dt>
           <dd
-            class="pf-c-description-list__description"
+            class="pf-v5-c-description-list__description"
           >
             <div
-              class="pf-c-description-list__text"
+              class="pf-v5-c-description-list__text"
             >
               3389
             </div>

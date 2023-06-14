@@ -3,13 +3,13 @@
 exports[`Render SerialConsoleActions 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__actions-serial"
+    class="pf-v5-c-console__actions-serial"
   >
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-1"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -17,9 +17,9 @@ exports[`Render SerialConsoleActions 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-2"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -32,13 +32,13 @@ exports[`Render SerialConsoleActions 1`] = `
 exports[`Render SerialConsoleActions with custom texts 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__actions-serial"
+    class="pf-v5-c-console__actions-serial"
   >
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-3"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -46,9 +46,9 @@ exports[`Render SerialConsoleActions with custom texts 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-4"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >

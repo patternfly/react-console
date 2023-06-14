@@ -3,29 +3,33 @@
 exports[`SerialConsole in the DISCONNECTED state 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__serial"
+    class="pf-v5-c-console__serial"
   >
     <div
-      class="pf-c-empty-state"
+      class="pf-v5-c-empty-state"
     >
       <div
-        class="pf-c-empty-state__content"
+        class="pf-v5-c-empty-state__content"
       >
         <div
-          class="pf-c-empty-state__body"
+          class="pf-v5-c-empty-state__body"
         >
           My text for Disconnected
         </div>
-        <button
-          aria-disabled="false"
-          class="pf-c-button pf-m-primary"
-          data-ouia-component-id="OUIA-Generated-Button-primary-1"
-          data-ouia-component-type="PF4/Button"
-          data-ouia-safe="true"
-          type="button"
+        <div
+          class="pf-v5-c-empty-state__footer"
         >
-          My text for Connect
-        </button>
+          <button
+            aria-disabled="false"
+            class="pf-v5-c-button pf-m-primary"
+            data-ouia-component-id="OUIA-Generated-Button-primary-1"
+            data-ouia-component-type="PF5/Button"
+            data-ouia-safe="true"
+            type="button"
+          >
+            My text for Connect
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -35,13 +39,13 @@ exports[`SerialConsole in the DISCONNECTED state 1`] = `
 exports[`SerialConsole in the LOADING state 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__actions-serial"
+    class="pf-v5-c-console__actions-serial"
   >
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-1"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -49,9 +53,9 @@ exports[`SerialConsole in the LOADING state 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-2"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -59,36 +63,40 @@ exports[`SerialConsole in the LOADING state 1`] = `
     </button>
   </div>
   <div
-    class="pf-c-console__serial"
+    class="pf-v5-c-console__serial"
   >
     <div
-      class="pf-c-empty-state"
+      class="pf-v5-c-empty-state"
     >
       <div
-        class="pf-c-empty-state__content"
+        class="pf-v5-c-empty-state__content"
       >
         <div
-          class="pf-c-empty-state__icon"
+          class="pf-v5-c-empty-state__header"
         >
-          <svg
-            aria-hidden="false"
-            aria-label="Contents"
-            aria-valuetext="Loading..."
-            class="pf-c-spinner pf-m-xl"
-            role="progressbar"
-            viewBox="0 0 100 100"
+          <div
+            class="pf-v5-c-empty-state__icon"
           >
-            <circle
-              class="pf-c-spinner__path"
-              cx="50"
-              cy="50"
-              fill="none"
-              r="45"
-            />
-          </svg>
+            <svg
+              aria-hidden="false"
+              aria-label="Contents"
+              aria-valuetext="Loading..."
+              class="pf-v5-c-spinner pf-m-xl"
+              role="progressbar"
+              viewBox="0 0 100 100"
+            >
+              <circle
+                class="pf-v5-c-spinner__path"
+                cx="50"
+                cy="50"
+                fill="none"
+                r="45"
+              />
+            </svg>
+          </div>
         </div>
         <div
-          class="pf-c-empty-state__body"
+          class="pf-v5-c-empty-state__body"
         >
           My text for Loading
         </div>
@@ -101,13 +109,13 @@ exports[`SerialConsole in the LOADING state 1`] = `
 exports[`SerialConsole with CONNECTED state renders 1`] = `
 <DocumentFragment>
   <div
-    class="pf-c-console__actions-serial"
+    class="pf-v5-c-console__actions-serial"
   >
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-3"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -115,9 +123,9 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="pf-c-button pf-m-secondary"
+      class="pf-v5-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-4"
-      data-ouia-component-type="PF4/Button"
+      data-ouia-component-type="PF5/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -125,10 +133,10 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
     </button>
   </div>
   <div
-    class="pf-c-console__serial"
+    class="pf-v5-c-console__serial"
   >
     <div
-      class="pf-c-console__xterm"
+      class="pf-v5-c-console__xterm"
       role="list"
     >
       <div

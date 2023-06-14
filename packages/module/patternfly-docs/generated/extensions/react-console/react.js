@@ -13,7 +13,12 @@ const pageData = {
   "id": "React console",
   "section": "extensions",
   "subsection": "",
+  "deprecated": false,
+  "beta": true,
+  "demo": false,
+  "newImplementationLink": false,
   "source": "react",
+  "tabName": null,
   "slug": "/extensions/react-console/react",
   "sourceLink": "https://github.com/patternfly/react-console",
   "relPath": "packages/module/patternfly-docs/content/extensions/react-console/examples/ReactConsole.md",
@@ -345,7 +350,6 @@ const pageData = {
       ]
     }
   ],
-  "beta": true,
   "fullscreenExamples": [
     "Basic Usage"
   ]

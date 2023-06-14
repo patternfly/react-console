@@ -118,7 +118,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
           <Select
             aria-label={textSelectConsoleType}
             placeholderText={textSelectConsoleType}
-            toggleId="pf-c-console__type-selector"
+            toggleId="pf-v5-c-console__type-selector"
             variant={SelectVariant.single}
             onSelect={(_, selection, __) => {
               setType(selection as SelectOptionObject);
