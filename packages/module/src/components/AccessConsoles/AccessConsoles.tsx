@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@patternfly/react-styles';
-import { Select, SelectOption, SelectOptionObject, SelectVariant } from '@patternfly/react-core/deprecated';
+import { Select, SelectOption, MenuToggle, MenuToggleElement, SelectList } from '@patternfly/react-core';
 
 import { constants } from '../common/constants';
 
@@ -54,9 +54,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
     [DESKTOP_VIEWER_CONSOLE_TYPE]: textDesktopViewerConsole
   };
   const [type, setType] = React.useState(
-    preselectedType !== NONE_TYPE
-      ? ({ value: preselectedType, toString: () => typeMap[preselectedType] } as SelectOptionObject)
-      : null
+    preselectedType !== NONE_TYPE ? { value: preselectedType, toString: () => typeMap[preselectedType] } : null
   );
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -69,10 +67,30 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
       }
     });
 
-  const onToggle = (_event: any, isOpen: boolean) => {
-    setIsOpen(isOpen);
+  const toggle = (toggleRef: React.Ref<MenuToggleElement>) => (
+    <MenuToggle
+      ref={toggleRef}
+      id="pf-v5-c-console__type-selector"
+      onClick={onToggleClick}
+      isExpanded={isOpen}
+      style={
+        {
+          width: '100%'
+        } as React.CSSProperties
+      }
+    >
+      {type.toString()}
+    </MenuToggle>
+  );
+
+  const onToggleClick = () => {
+    setIsOpen(!isOpen);
   };
 
+  const onSelect = (_event: React.MouseEvent<Element, MouseEvent>, value: string | number) => {
+    setType(value as unknown as React.SetStateAction<{ value: string; toString: () => string }>);
+    setIsOpen(false);
+  };
   const selectOptions: any[] = [];
 
   React.Children.toArray(children as React.ReactElement[]).forEach((child: any) => {
@@ -81,33 +99,37 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
         <SelectOption
           key={VNC_CONSOLE_TYPE}
           id={VNC_CONSOLE_TYPE}
-          value={{ value: VNC_CONSOLE_TYPE, toString: () => textVncConsole } as SelectOptionObject}
-        />
+          value={{ value: VNC_CONSOLE_TYPE, toString: () => textVncConsole }}
+        >
+          {textVncConsole}
+        </SelectOption>
       );
     } else if (isChildOfType(child, SERIAL_CONSOLE_TYPE)) {
       selectOptions.push(
         <SelectOption
           key={SERIAL_CONSOLE_TYPE}
           id={SERIAL_CONSOLE_TYPE}
-          value={{ value: SERIAL_CONSOLE_TYPE, toString: () => textSerialConsole } as SelectOptionObject}
-        />
+          value={{ value: SERIAL_CONSOLE_TYPE, toString: () => textSerialConsole }}
+        >
+          {textSerialConsole}
+        </SelectOption>
       );
     } else if (isChildOfType(child, DESKTOP_VIEWER_CONSOLE_TYPE)) {
       selectOptions.push(
         <SelectOption
           key={DESKTOP_VIEWER_CONSOLE_TYPE}
           id={DESKTOP_VIEWER_CONSOLE_TYPE}
-          value={{ value: DESKTOP_VIEWER_CONSOLE_TYPE, toString: () => textDesktopViewerConsole } as SelectOptionObject}
-        />
+          value={{ value: DESKTOP_VIEWER_CONSOLE_TYPE, toString: () => textDesktopViewerConsole }}
+        >
+          {textDesktopViewerConsole}
+        </SelectOption>
       );
     } else {
       const typeText = getChildTypeName(child);
       selectOptions.push(
-        <SelectOption
-          key={typeText}
-          id={typeText}
-          value={{ value: typeText, toString: () => typeText } as SelectOptionObject}
-        />
+        <SelectOption key={typeText} id={typeText} value={{ value: typeText, toString: () => typeText }}>
+          {typeText}
+        </SelectOption>
       );
     }
   });
@@ -117,18 +139,13 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
         <div className={css(styles.consoleActions)}>
           <Select
             aria-label={textSelectConsoleType}
-            placeholderText={textSelectConsoleType}
-            toggleId="pf-v5-c-console__type-selector"
-            variant={SelectVariant.single}
-            onSelect={(_, selection, __) => {
-              setType(selection as SelectOptionObject);
-              setIsOpen(false);
-            }}
-            selections={type}
+            toggle={toggle}
+            onSelect={onSelect}
             isOpen={isOpen}
-            onToggle={onToggle}
+            selected={type}
+            onOpenChange={(isOpen) => setIsOpen(isOpen)}
           >
-            {selectOptions}
+            <SelectList>{selectOptions}</SelectList>
           </Select>
         </div>
       )}
