@@ -87,8 +87,8 @@ describe('AccessConsoles', () => {
     expect(screen.getByText('VNC console text')).toBeInTheDocument();
 
     // Open dropdown and select "Serial console" option
-    await user.click(screen.getByRole('button', { name: 'Options menu' }));
-    await user.click(screen.getByText('Serial console', { selector: 'button' }));
+    await user.click(screen.getByRole('button', { name: 'Console type toggle' }));
+    await user.click(screen.getByText('Serial console'));
 
     // VNC content is no longer visible, and loading contents of the Serial console are visible.
     expect(screen.getByText(/Loading/)).toBeInTheDocument();

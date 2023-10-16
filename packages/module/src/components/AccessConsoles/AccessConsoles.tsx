@@ -72,6 +72,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
       ref={toggleRef}
       id="pf-v5-c-console__type-selector"
       onClick={onToggleClick}
+      aria-label="Console type toggle"
       isExpanded={isOpen}
       style={
         {
