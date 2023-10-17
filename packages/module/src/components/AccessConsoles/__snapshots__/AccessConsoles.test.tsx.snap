@@ -24,32 +24,22 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
     <div
       class="pf-v5-c-console__actions"
     >
-      <div
-        class="pf-v5-c-select"
-        data-ouia-component-id="OUIA-Generated-Select-single-1"
-        data-ouia-component-type="PF5/Select"
-        data-ouia-safe="true"
+      <button
+        aria-expanded="false"
+        aria-label="Console type toggle"
+        class="pf-v5-c-menu-toggle"
+        id="pf-v5-c-console__type-selector"
+        style="width: 100%;"
+        type="button"
       >
-        <button
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-label="Options menu"
-          aria-labelledby=" pf-v5-c-console__type-selector"
-          class="pf-v5-c-select__toggle"
-          id="pf-v5-c-console__type-selector"
-          type="button"
+        <span
+          class="pf-v5-c-menu-toggle__text"
+        />
+        <span
+          class="pf-v5-c-menu-toggle__controls"
         >
-          <div
-            class="pf-v5-c-select__toggle-wrapper"
-          >
-            <span
-              class="pf-v5-c-select__toggle-text"
-            >
-              Select console type
-            </span>
-          </div>
           <span
-            class="pf-v5-c-select__toggle-arrow"
+            class="pf-v5-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
@@ -65,8 +55,8 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
               />
             </svg>
           </span>
-        </button>
-      </div>
+        </span>
+      </button>
     </div>
   </div>
 </DocumentFragment>

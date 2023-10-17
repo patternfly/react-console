@@ -1,11 +1,7 @@
 import React from 'react';
 import { css } from '@patternfly/react-styles';
 import { Button, ButtonVariant } from '@patternfly/react-core';
-import {
-  Dropdown as DropdownDeprecated,
-  DropdownItem as DropdownItemDeprecated,
-  DropdownToggle as DropdownToggleDeprecated
-} from '@patternfly/react-core/deprecated';
+import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
 
 import styles from '@patternfly/react-styles/css/components/Consoles/VncConsole';
 
@@ -29,24 +25,34 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
   additionalButtons = []
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const onToggleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const onSelect = (_event: React.MouseEvent<Element, MouseEvent>, _value: string | number) => {
+    setIsOpen(false);
+  };
   const toolbar = (
     <div className={css(styles.consoleActionsVnc)}>
       {additionalButtons}
-      <DropdownDeprecated
+      <Dropdown
         id="pf-v5-c-console__send-shortcut"
-        onSelect={() => setIsOpen(false)}
-        toggle={
-          <DropdownToggleDeprecated id="pf-v5-c-console__actions-vnc-toggle-id" onToggle={() => setIsOpen(!isOpen)}>
-            {textSendShortcut}
-          </DropdownToggleDeprecated>
-        }
         isOpen={isOpen}
-        dropdownItems={[
-          <DropdownItemDeprecated onClick={onCtrlAltDel} key="ctrl-alt-delete">
+        onSelect={onSelect}
+        onOpenChange={(isOpen: boolean) => setIsOpen(isOpen)}
+        toggle={(toggleRef: React.Ref<MenuToggleElement>) => (
+          <MenuToggle ref={toggleRef} onClick={onToggleClick} isExpanded={isOpen}>
+            {textSendShortcut}
+          </MenuToggle>
+        )}
+      >
+        <DropdownList>
+          <DropdownItem onClick={onCtrlAltDel} key="ctrl-alt-delete">
             {textCtrlAltDel}
-          </DropdownItemDeprecated>
-        ]}
-      />
+          </DropdownItem>
+        </DropdownList>
+      </Dropdown>
       <Button variant={ButtonVariant.secondary} onClick={onDisconnect}>
         {textDisconnect}
       </Button>

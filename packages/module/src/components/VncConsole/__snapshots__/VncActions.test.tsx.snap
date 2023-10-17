@@ -5,30 +5,21 @@ exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
   <div
     class="pf-v5-c-console__actions-vnc"
   >
-    <div
-      class="pf-v5-c-dropdown"
-      data-ouia-component-id="OUIA-Generated-Dropdown-2"
-      data-ouia-component-type="PF5/Dropdown"
-      data-ouia-safe="true"
-      id="pf-v5-c-console__send-shortcut"
+    <button
+      aria-expanded="false"
+      class="pf-v5-c-menu-toggle"
+      type="button"
     >
-      <button
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="pf-v5-c-dropdown__toggle"
-        data-ouia-component-id="OUIA-Generated-DropdownToggle-2"
-        data-ouia-component-type="PF5/DropdownToggle"
-        data-ouia-safe="true"
-        id="pf-v5-c-console__actions-vnc-toggle-id"
-        type="button"
+      <span
+        class="pf-v5-c-menu-toggle__text"
+      >
+        My Send Shortcut description
+      </span>
+      <span
+        class="pf-v5-c-menu-toggle__controls"
       >
         <span
-          class="pf-v5-c-dropdown__toggle-text"
-        >
-          My Send Shortcut description
-        </span>
-        <span
-          class="pf-v5-c-dropdown__toggle-icon"
+          class="pf-v5-c-menu-toggle__toggle-icon"
         >
           <svg
             aria-hidden="true"
@@ -44,8 +35,8 @@ exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
             />
           </svg>
         </span>
-      </button>
-    </div>
+      </span>
+    </button>
     <button
       aria-disabled="false"
       class="pf-v5-c-button pf-m-secondary"
@@ -65,30 +56,21 @@ exports[`VncActions VncActions renders correctly html 1`] = `
   <div
     class="pf-v5-c-console__actions-vnc"
   >
-    <div
-      class="pf-v5-c-dropdown"
-      data-ouia-component-id="OUIA-Generated-Dropdown-3"
-      data-ouia-component-type="PF5/Dropdown"
-      data-ouia-safe="true"
-      id="pf-v5-c-console__send-shortcut"
+    <button
+      aria-expanded="false"
+      class="pf-v5-c-menu-toggle"
+      type="button"
     >
-      <button
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="pf-v5-c-dropdown__toggle"
-        data-ouia-component-id="OUIA-Generated-DropdownToggle-3"
-        data-ouia-component-type="PF5/DropdownToggle"
-        data-ouia-safe="true"
-        id="pf-v5-c-console__actions-vnc-toggle-id"
-        type="button"
+      <span
+        class="pf-v5-c-menu-toggle__text"
+      >
+        My Send Shortcut description
+      </span>
+      <span
+        class="pf-v5-c-menu-toggle__controls"
       >
         <span
-          class="pf-v5-c-dropdown__toggle-text"
-        >
-          My Send Shortcut description
-        </span>
-        <span
-          class="pf-v5-c-dropdown__toggle-icon"
+          class="pf-v5-c-menu-toggle__toggle-icon"
         >
           <svg
             aria-hidden="true"
@@ -104,8 +86,8 @@ exports[`VncActions VncActions renders correctly html 1`] = `
             />
           </svg>
         </span>
-      </button>
-    </div>
+      </span>
+    </button>
     <button
       aria-disabled="false"
       class="pf-v5-c-button pf-m-secondary"
@@ -125,30 +107,21 @@ exports[`VncActions placeholder render test 1`] = `
   <div
     class="pf-v5-c-console__actions-vnc"
   >
-    <div
-      class="pf-v5-c-dropdown"
-      data-ouia-component-id="OUIA-Generated-Dropdown-1"
-      data-ouia-component-type="PF5/Dropdown"
-      data-ouia-safe="true"
-      id="pf-v5-c-console__send-shortcut"
+    <button
+      aria-expanded="false"
+      class="pf-v5-c-menu-toggle"
+      type="button"
     >
-      <button
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="pf-v5-c-dropdown__toggle"
-        data-ouia-component-id="OUIA-Generated-DropdownToggle-1"
-        data-ouia-component-type="PF5/DropdownToggle"
-        data-ouia-safe="true"
-        id="pf-v5-c-console__actions-vnc-toggle-id"
-        type="button"
+      <span
+        class="pf-v5-c-menu-toggle__text"
+      >
+        Send Key
+      </span>
+      <span
+        class="pf-v5-c-menu-toggle__controls"
       >
         <span
-          class="pf-v5-c-dropdown__toggle-text"
-        >
-          Send Key
-        </span>
-        <span
-          class="pf-v5-c-dropdown__toggle-icon"
+          class="pf-v5-c-menu-toggle__toggle-icon"
         >
           <svg
             aria-hidden="true"
@@ -164,8 +137,8 @@ exports[`VncActions placeholder render test 1`] = `
             />
           </svg>
         </span>
-      </button>
-    </div>
+      </span>
+    </button>
     <button
       aria-disabled="false"
       class="pf-v5-c-button pf-m-secondary"
