@@ -212,8 +212,10 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="expandable-section-content-1698675628992bbmbqru6z4u"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="expandable-section-toggle-1698675628992n6f177afweo"
           type="button"
         >
           <span
@@ -240,9 +242,11 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="expandable-section-toggle-1698675628992n6f177afweo"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="expandable-section-content-1698675628992bbmbqru6z4u"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -539,8 +543,10 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="expandable-section-content-1698675629161l3c309wr2do"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="expandable-section-toggle-169867562916173dfkphpdt"
           type="button"
         >
           <span
@@ -567,9 +573,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="expandable-section-toggle-169867562916173dfkphpdt"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="expandable-section-content-1698675629161l3c309wr2do"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -700,8 +708,10 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="expandable-section-content-1698675629166o7c09fke8e"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="expandable-section-toggle-1698675629166rjhfjxsiqb"
           type="button"
         >
           <span
@@ -728,9 +738,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="expandable-section-toggle-1698675629166rjhfjxsiqb"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="expandable-section-content-1698675629166o7c09fke8e"
+          role="region"
         />
       </div>
     </div>
@@ -947,8 +959,10 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="expandable-section-content-1698675629121nopowojgn7f"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="expandable-section-toggle-1698675629121fqol0i7qkd"
           type="button"
         >
           <span
@@ -975,9 +989,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="expandable-section-toggle-1698675629121fqol0i7qkd"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="expandable-section-content-1698675629121nopowojgn7f"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -1108,8 +1124,10 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="expandable-section-content-16986756291252ol6r2z0fwz"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="expandable-section-toggle-1698675629125u13w7vqsrp"
           type="button"
         >
           <span
@@ -1136,9 +1154,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="expandable-section-toggle-1698675629125u13w7vqsrp"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="expandable-section-content-16986756291252ol6r2z0fwz"
+          role="region"
         />
       </div>
     </div>
