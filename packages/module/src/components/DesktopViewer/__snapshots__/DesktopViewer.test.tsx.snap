@@ -212,8 +212,10 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="remote-viewer-details-content"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="remote-viewer-details-toggle"
           type="button"
         >
           <span
@@ -240,9 +242,11 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="remote-viewer-details-toggle"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="remote-viewer-details-content"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -539,8 +543,10 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="remote-viewer-details-content"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="remote-viewer-details-toggle"
           type="button"
         >
           <span
@@ -567,9 +573,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="remote-viewer-details-toggle"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="remote-viewer-details-content"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -700,8 +708,10 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="remote-desktop-details-content"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="remote-desktop-details-toggle"
           type="button"
         >
           <span
@@ -728,9 +738,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="remote-desktop-details-toggle"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="remote-desktop-details-content"
+          role="region"
         />
       </div>
     </div>
@@ -947,8 +959,10 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="remote-viewer-details-content"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="remote-viewer-details-toggle"
           type="button"
         >
           <span
@@ -975,9 +989,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="remote-viewer-details-toggle"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="remote-viewer-details-content"
+          role="region"
         >
           <dl
             class="pf-v5-c-description-list pf-m-horizontal"
@@ -1108,8 +1124,10 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         class="pf-v5-c-expandable-section"
       >
         <button
+          aria-controls="remote-desktop-details-content"
           aria-expanded="false"
           class="pf-v5-c-expandable-section__toggle"
+          id="remote-desktop-details-toggle"
           type="button"
         >
           <span
@@ -1136,9 +1154,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           </span>
         </button>
         <div
+          aria-labelledby="remote-desktop-details-toggle"
           class="pf-v5-c-expandable-section__content"
           hidden=""
-          id=""
+          id="remote-desktop-details-content"
+          role="region"
         />
       </div>
     </div>

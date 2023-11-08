@@ -111,6 +111,8 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
       {!!_console && (
         <ExpandableSection
           toggleText={textMoreInfo}
+          toggleId="remote-viewer-details-toggle"
+          contentId="remote-viewer-details-content"
           isExpanded={isExpandedDefault}
           onToggle={(_event, isExpanded) => setIsExpandedDefault(isExpanded)}
         >
@@ -121,6 +123,8 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
         <ExpandableSection
           toggleText={textMoreRDPInfo}
           isExpanded={isExpandedRDP}
+          toggleId="remote-desktop-details-toggle"
+          contentId="remote-desktop-details-content"
           onToggle={(_event, isExpanded) => setIsExpandedRDP(isExpanded)}
         >
           <MoreInformationDefaultRDPContent textMoreRDPInfoContent={textMoreRDPInfoContent} />
