@@ -29,7 +29,7 @@ export const MoreInformationDefaultContent: React.FunctionComponent<MoreInformat
       <MoreInformationInstallVariant os="Windows">
         <div>
           Download the MSI from{' '}
-          <a href="https://virt-manager.org/download/" target="_blank" rel="noopener noreferrer">
+          <a href="https://virt-manager.org/download" target="_blank" rel="noopener noreferrer">
             virt-manager.org
           </a>
         </div>
