@@ -97,13 +97,13 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
   // RDP button is rendered only if the protocol is available
   // If none of Spice or VNC is available, the .vv button is disabled (but rendered)
   return (
-    <div className="pf-v5-c-console__remote-viewer">
-      <div className="pf-v5-c-console__remote-viewer-launch">
-        <Button className="pf-v5-c-console__remote-viewer-launch-vv" onClick={onClickVV} isDisabled={!_console}>
+    <div className="pf-v6-c-console__remote-viewer">
+      <div className="pf-v6-c-console__remote-viewer-launch">
+        <Button className="pf-v6-c-console__remote-viewer-launch-vv" onClick={onClickVV} isDisabled={!_console}>
           {textConnectWithRemoteViewer}
         </Button>
         {!!rdp && (
-          <Button onClick={onClickRDP} className="pf-v5-c-console__remote-viewer-launch-rdp">
+          <Button onClick={onClickRDP} className="pf-v6-c-console__remote-viewer-launch-rdp">
             {textConnectWithRDP}
           </Button>
         )}

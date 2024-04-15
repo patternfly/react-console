@@ -70,7 +70,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
   const toggle = (toggleRef: React.Ref<MenuToggleElement>) => (
     <MenuToggle
       ref={toggleRef}
-      id="pf-v5-c-console__type-selector"
+      id="pf-v6-c-console__type-selector"
       onClick={onToggleClick}
       aria-label="Console type toggle"
       isExpanded={isOpen}

@@ -3,7 +3,7 @@
 exports[`AccessConsoles Empty 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`AccessConsoles Empty 1`] = `
 exports[`AccessConsoles with DesktopViewer 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   />
 </DocumentFragment>
 `;
@@ -19,31 +19,28 @@ exports[`AccessConsoles with DesktopViewer 1`] = `
 exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   >
     <div
-      class="pf-v5-c-console__actions"
+      class="pf-v6-c-console__actions"
     >
       <button
         aria-expanded="false"
         aria-label="Console type toggle"
-        class="pf-v5-c-menu-toggle"
-        id="pf-v5-c-console__type-selector"
+        class="pf-v6-c-menu-toggle"
+        id="pf-v6-c-console__type-selector"
         style="width: 100%;"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
-        />
-        <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -65,7 +62,7 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   />
 </DocumentFragment>
 `;
@@ -73,7 +70,7 @@ exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 exports[`AccessConsoles with VncConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   />
 </DocumentFragment>
 `;
@@ -81,14 +78,14 @@ exports[`AccessConsoles with VncConsole as a single child 1`] = `
 exports[`AccessConsoles with preselected SerialConsole 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   >
     <div
-      class="pf-v5-c-console__actions-serial"
+      class="pf-v6-c-console__actions-serial"
     >
       <button
         aria-disabled="false"
-        class="pf-v5-c-button pf-m-secondary"
+        class="pf-v6-c-button pf-m-secondary"
         data-ouia-component-id="OUIA-Generated-Button-secondary-1"
         data-ouia-component-type="PF5/Button"
         data-ouia-safe="true"
@@ -98,7 +95,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
       <button
         aria-disabled="false"
-        class="pf-v5-c-button pf-m-secondary"
+        class="pf-v6-c-button pf-m-secondary"
         data-ouia-component-id="OUIA-Generated-Button-secondary-2"
         data-ouia-component-type="PF5/Button"
         data-ouia-safe="true"
@@ -108,30 +105,30 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
     </div>
     <div
-      class="pf-v5-c-console__serial"
+      class="pf-v6-c-console__serial"
     >
       <div
-        class="pf-v5-c-empty-state"
+        class="pf-v6-c-empty-state"
       >
         <div
-          class="pf-v5-c-empty-state__content"
+          class="pf-v6-c-empty-state__content"
         >
           <div
-            class="pf-v5-c-empty-state__header"
+            class="pf-v6-c-empty-state__header"
           >
             <div
-              class="pf-v5-c-empty-state__icon"
+              class="pf-v6-c-empty-state__icon"
             >
               <svg
                 aria-hidden="false"
                 aria-label="Contents"
                 aria-valuetext="Loading..."
-                class="pf-v5-c-spinner pf-m-xl"
+                class="pf-v6-c-spinner pf-m-xl"
                 role="progressbar"
                 viewBox="0 0 100 100"
               >
                 <circle
-                  class="pf-v5-c-spinner__path"
+                  class="pf-v6-c-spinner__path"
                   cx="50"
                   cy="50"
                   fill="none"
@@ -139,11 +136,15 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
-            class="pf-v5-c-empty-state__body"
-          >
-            Loading ...
+            <div
+              class="pf-v6-c-empty-state__title"
+            >
+              <h1
+                class="pf-v6-c-empty-state__title-text"
+              >
+                Loading ...
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -155,7 +156,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
 exports[`AccessConsoles with wrapped SerialConsole as a child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console"
+    class="pf-v6-c-console"
   >
     <p>
       Serial console text

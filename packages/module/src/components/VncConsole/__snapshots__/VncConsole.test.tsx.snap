@@ -3,31 +3,31 @@
 exports[`placeholder render test 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v5-c-console__vnc"
+    class="pf-v6-c-console__vnc"
   >
     <div>
       <div
-        class="pf-v5-c-empty-state"
+        class="pf-v6-c-empty-state"
       >
         <div
-          class="pf-v5-c-empty-state__content"
+          class="pf-v6-c-empty-state__content"
         >
           <div
-            class="pf-v5-c-empty-state__header"
+            class="pf-v6-c-empty-state__header"
           >
             <div
-              class="pf-v5-c-empty-state__icon"
+              class="pf-v6-c-empty-state__icon"
             >
               <svg
                 aria-hidden="false"
                 aria-label="Contents"
                 aria-valuetext="Loading..."
-                class="pf-v5-c-spinner pf-m-xl"
+                class="pf-v6-c-spinner pf-m-xl"
                 role="progressbar"
                 viewBox="0 0 100 100"
               >
                 <circle
-                  class="pf-v5-c-spinner__path"
+                  class="pf-v6-c-spinner__path"
                   cx="50"
                   cy="50"
                   fill="none"
@@ -35,11 +35,15 @@ exports[`placeholder render test 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
-            class="pf-v5-c-empty-state__body"
-          >
-            Connecting
+            <div
+              class="pf-v6-c-empty-state__title"
+            >
+              <h1
+                class="pf-v6-c-empty-state__title-text"
+              >
+                Connecting
+              </h1>
+            </div>
           </div>
         </div>
       </div>

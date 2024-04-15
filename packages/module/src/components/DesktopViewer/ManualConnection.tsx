@@ -61,7 +61,7 @@ export const ManualConnection: React.FunctionComponent<ManualConnectionProps> = 
   const rdpAddress = rdp && rdp.address !== address ? rdp.address : null;
 
   return (
-    <div className="pf-v5-c-console__manual-connection">
+    <div className="pf-v6-c-console__manual-connection">
       <Title headingLevel="h2" size="3xl">
         {textManualConnection}
       </Title>
