@@ -1,15 +1,7 @@
 import React from 'react';
 
 import { css } from '@patternfly/react-styles';
-import {
-  Button,
-  EmptyState,
-  EmptyStateBody,
-  EmptyStateIcon,
-  Spinner,
-  EmptyStateHeader,
-  EmptyStateFooter
-} from '@patternfly/react-core';
+import { Button, EmptyState, EmptyStateBody, Spinner, EmptyStateFooter } from '@patternfly/react-core';
 
 import { XTerm, XTermProps } from './XTerm';
 import { SerialConsoleActions } from './SerialConsoleActions';
@@ -115,7 +107,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
       break;
     case DISCONNECTED:
       terminal = (
-        <EmptyState>
+        <EmptyState titleText>
           <EmptyStateBody>{textDisconnected}</EmptyStateBody>
           <EmptyStateFooter>
             <Button onClick={onConnectClick}>{textConnect}</Button>
@@ -126,8 +118,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
     case LOADING:
     default:
       terminal = (
-        <EmptyState>
-          <EmptyStateHeader icon={<EmptyStateIcon icon={Spinner} />} />
+        <EmptyState icon={Spinner} titleText>
           <EmptyStateBody>{textLoading}</EmptyStateBody>
         </EmptyState>
       );
