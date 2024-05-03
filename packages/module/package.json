@@ -6,6 +6,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
+    "build:watch": "npm run build:esm -- --watch",
     "build:esm": "tsc --build --verbose ./tsconfig.json",
     "build:cjs": "tsc --build --verbose ./tsconfig.cjs.json",
     "clean": "rimraf dist",
@@ -34,8 +35,8 @@
   },
   "dependencies": {
     "@novnc/novnc": "^1.3.0",
-    "@patternfly/react-core": "^6.0.0-alpha.1",
-    "@patternfly/react-styles": "^6.0.0-alpha.1",
+    "@patternfly/react-core": "6.0.0-alpha.50",
+    "@patternfly/react-styles": "6.0.0-alpha.19",
     "@spice-project/spice-html5": "^0.2.1",
     "file-saver": "^1.3.8",
     "xterm": "^4.8.1",
@@ -46,14 +47,13 @@
     "react-dom": "^17 || ^18"
   },
   "devDependencies": {
-    "@patternfly/documentation-framework": "^5.0.15",
-    "@patternfly/patternfly": "^6.0.0-alpha.9",
+    "@patternfly/documentation-framework": "6.0.0-alpha.20",
+    "@patternfly/patternfly": "6.0.0-alpha.117",
     "@patternfly/patternfly-a11y": "^4.3.1",
-    "@patternfly/react-code-editor": "^6.0.0-alpha.1",
-    "@patternfly/react-table": "^6.0.0-alpha.1",
+    "@patternfly/react-code-editor": "6.0.0-alpha.50",
+    "@patternfly/react-table": "6.0.0-alpha.50",
     "rimraf": "^2.6.2",
     "serve": "^14.1.2",
-    "react-monaco-editor": "^0.51.0",
     "monaco-editor": "^0.34.1"
   }
 }

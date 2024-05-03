@@ -37,7 +37,7 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
     <div className={css(styles.consoleActionsVnc)}>
       {additionalButtons}
       <Dropdown
-        id="pf-v5-c-console__send-shortcut"
+        id="pf-v6-c-console__send-shortcut"
         isOpen={isOpen}
         onSelect={onSelect}
         onOpenChange={(isOpen: boolean) => setIsOpen(isOpen)}
