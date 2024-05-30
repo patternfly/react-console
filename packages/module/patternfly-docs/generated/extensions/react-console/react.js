@@ -376,10 +376,10 @@ const Component = () => (
     <AutoLinkHeader {...{"id":"note","size":"h3","className":"ws-title ws-h3"}}>
       {`Note`}
     </AutoLinkHeader>
-    <p {...{"className":"ws-p"}}>
+    <p {...{"className":"undefinedpf-v6-c-content--p ws-p "}}>
       {`React console lives in its own package at `}
       <PatternflyThemeLink {...{"to":"https://www.npmjs.com/package/@patternfly/react-console"}}>
-        <code {...{"className":"ws-code"}}>
+        <code {...{"className":"ws-code "}}>
           {`@patternfly/react-console`}
         </code>
       </PatternflyThemeLink>
