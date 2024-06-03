@@ -41,7 +41,7 @@ exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
       aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-2"
-      data-ouia-component-type="PF5/Button"
+      data-ouia-component-type="PF6/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -92,7 +92,7 @@ exports[`VncActions VncActions renders correctly html 1`] = `
       aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-3"
-      data-ouia-component-type="PF5/Button"
+      data-ouia-component-type="PF6/Button"
       data-ouia-safe="true"
       type="button"
     >
@@ -143,7 +143,7 @@ exports[`VncActions placeholder render test 1`] = `
       aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-1"
-      data-ouia-component-type="PF5/Button"
+      data-ouia-component-type="PF6/Button"
       data-ouia-safe="true"
       type="button"
     >
