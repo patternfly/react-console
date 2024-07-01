@@ -4,7 +4,6 @@ section: extensions
 source: react
 propComponents: ['AccessConsoles', 'SerialConsole', 'VncConsole', 'DesktopViewer']
 ouia: false
-beta: true
 sourceLink: https://github.com/patternfly/react-console
 ---
 

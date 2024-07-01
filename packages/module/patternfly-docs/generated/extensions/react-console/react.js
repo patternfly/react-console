@@ -15,7 +15,7 @@ const pageData = {
   "subsection": "",
   "deprecated": false,
   "template": false,
-  "beta": true,
+  "beta": false,
   "demo": false,
   "newImplementationLink": false,
   "source": "react",
