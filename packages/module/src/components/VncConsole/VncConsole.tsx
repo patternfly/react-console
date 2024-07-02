@@ -11,9 +11,9 @@ import {
   EmptyStateFooter
 } from '@patternfly/react-core';
 
-import { initLogging } from '@novnc/novnc/core/util/logging';
+import { initLogging } from '@novnc/novnc/lib/util/logging';
 /** Has bad types. https://github.com/larryprice/novnc-core/issues/5 */
-import RFB from '@novnc/novnc/core/rfb';
+import RFB from '@novnc/novnc/lib/rfb';
 
 import { VncActions } from './VncActions';
 import { constants } from '../common/constants';
