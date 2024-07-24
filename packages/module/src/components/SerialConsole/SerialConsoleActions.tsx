@@ -1,9 +1,18 @@
 import React from 'react';
-import { css } from '@patternfly/react-styles';
 import { Button } from '@patternfly/react-core';
 
-import styles from '@patternfly/react-styles/css/components/Consoles/SerialConsole';
+import { createUseStyles } from 'react-jss';
 
+const useStyles = createUseStyles({
+  consoleActionsSerial: {
+    gridArea: 'actions-extra',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    '> button': {
+      marginRight: 'var(--pf-t-global--spacer--sm)'
+    }
+  }
+});
 export interface SerialConsoleActionsProps extends React.HTMLProps<HTMLDivElement> {
   onDisconnect: () => void;
   onReset: () => void;
@@ -16,7 +25,7 @@ export const SerialConsoleActions: React.FunctionComponent<SerialConsoleActionsP
   textReset = 'Reset',
   ...props
 }: SerialConsoleActionsProps) => (
-  <div className={css(styles.consoleActionsSerial)}>
+  <div className={useStyles().consoleActionsSerial}>
     <Button variant="secondary" onClick={props.onDisconnect}>
       {textDisconnect}
     </Button>

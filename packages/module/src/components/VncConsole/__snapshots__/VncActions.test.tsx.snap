@@ -3,7 +3,7 @@
 exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-vnc"
+    class="consoleActionsVnc-0-2-1"
   >
     <button
       aria-expanded="false"
@@ -54,7 +54,7 @@ exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
 exports[`VncActions VncActions renders correctly html 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-vnc"
+    class="consoleActionsVnc-0-2-1"
   >
     <button
       aria-expanded="false"
@@ -105,7 +105,7 @@ exports[`VncActions VncActions renders correctly html 1`] = `
 exports[`VncActions placeholder render test 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-vnc"
+    class="consoleActionsVnc-0-2-1"
   >
     <button
       aria-expanded="false"

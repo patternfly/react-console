@@ -1,13 +1,25 @@
 import React from 'react';
-import { css } from '@patternfly/react-styles';
 import { Select, SelectOption, MenuToggle, MenuToggleElement, SelectList } from '@patternfly/react-core';
 
 import { constants } from '../common/constants';
-
-import styles from '@patternfly/react-styles/css/components/Consoles/AccessConsoles';
-import '@patternfly/react-styles/css/components/Consoles/AccessConsoles.css';
+import { createUseStyles } from 'react-jss';
 
 const { NONE_TYPE, SERIAL_CONSOLE_TYPE, VNC_CONSOLE_TYPE, DESKTOP_VIEWER_CONSOLE_TYPE } = constants;
+
+const useStyles = createUseStyles({
+  console: {
+    display: 'grid',
+    gridTemplateAreas: '\'actions-main actions-extra\'\n    \'main main\'',
+    rowGap: 'var(--pf-t-global--spacer--md)'
+  },
+  consoleActions: {
+    gridArea: 'actions-main',
+    display: 'flex',
+    '> div': {
+      marginRight: 'var(--pf-t-global--spacer--sm)'
+    }
+  }
+});
 
 const getChildTypeName = (child: any) =>
   child && child.props && child.props.type ? child.props.type : (child && child.type && child.type.displayName) || null;
@@ -48,6 +60,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
   textDesktopViewerConsole = 'Desktop viewer',
   preselectedType = null
 }) => {
+  const styles = useStyles();
   const typeMap = {
     [SERIAL_CONSOLE_TYPE]: textSerialConsole,
     [VNC_CONSOLE_TYPE]: textVncConsole,
@@ -135,9 +148,9 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
     }
   });
   return (
-    <div className={css(styles.console)}>
+    <div className={styles.console}>
       {React.Children.toArray(children).length > 1 && (
-        <div className={css(styles.consoleActions)}>
+        <div className={styles.consoleActions}>
           <Select
             aria-label={textSelectConsoleType}
             toggle={toggle}

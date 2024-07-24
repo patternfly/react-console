@@ -3,11 +3,7 @@ import { AutoLinkHeader, Example, Link as PatternflyThemeLink } from '@patternfl
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from '../../../content/extensions/react-console/examples/./SerialConsoleCustom.jsx';
 import { debounce } from '@patternfly/react-core';
-import '@patternfly/react-styles/src/css/components/Consoles/AccessConsoles.css';
-import '@patternfly/react-styles/src/css/components/Consoles/DesktopViewer.css';
-import '@patternfly/react-styles/src/css/components/Consoles/SerialConsole.css';
-import '@patternfly/react-styles/src/css/components/Consoles/VncConsole.css';
-import '@patternfly/react-styles/src/css/components/Consoles/xterm.css';
+import '@patternfly/react-console/dist/css/xterm.css';
 import srcImportbasicusage from './react/basic-usage.png';
 const pageData = {
   "id": "React console",

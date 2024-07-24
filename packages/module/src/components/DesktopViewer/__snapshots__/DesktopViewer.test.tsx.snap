@@ -143,7 +143,7 @@ exports[`DesktopViewer default MoreInformationContent 1`] = `
 exports[`DesktopViewer empty 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__desktop-viewer"
+    class="consoleDesktopViewer-0-2-1"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -189,7 +189,7 @@ exports[`DesktopViewer empty 1`] = `
 exports[`DesktopViewer with Spice and VNC 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__desktop-viewer"
+    class="consoleDesktopViewer-0-2-1"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -510,7 +510,7 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__desktop-viewer"
+    class="consoleDesktopViewer-0-2-1"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -926,7 +926,7 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__desktop-viewer"
+    class="consoleDesktopViewer-0-2-1"
   >
     <div
       class="pf-v6-c-console__remote-viewer"

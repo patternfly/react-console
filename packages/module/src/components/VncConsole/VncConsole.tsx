@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { css } from '@patternfly/react-styles';
 import { Button, EmptyState, Spinner, EmptyStateFooter } from '@patternfly/react-core';
 
 import { initLogging } from '@novnc/novnc/core/util/logging';
@@ -10,10 +9,15 @@ import RFB from '@novnc/novnc/core/rfb';
 import { VncActions } from './VncActions';
 import { constants } from '../common/constants';
 
-import styles from '@patternfly/react-styles/css/components/Consoles/VncConsole';
-import '@patternfly/react-styles/css/components/Consoles/VncConsole.css';
+import { createUseStyles } from 'react-jss';
 
 const { CONNECTED, CONNECTING, DISCONNECTED } = constants;
+
+const useStyles = createUseStyles({
+  consoleVnc: {
+    gridArea: 'main'
+  }
+});
 
 export interface VncConsoleProps extends React.HTMLProps<HTMLDivElement> {
   /** Children nodes */
@@ -99,6 +103,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
   textCtrlAltDel
 }) => {
   const rfb = React.useRef<any>();
+  const styles = useStyles();
 
   const novncElem = React.useRef<HTMLDivElement>(null);
   const [status, setStatus] = React.useState(CONNECTING);
@@ -235,7 +240,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
   return (
     <>
       {rightContent}
-      <div className={css(styles.consoleVnc)}>
+      <div className={styles.consoleVnc}>
         {children}
         <React.Fragment>
           <div>

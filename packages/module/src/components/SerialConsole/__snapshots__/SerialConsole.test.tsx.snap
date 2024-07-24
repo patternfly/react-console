@@ -3,7 +3,7 @@
 exports[`SerialConsole in the DISCONNECTED state 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__serial"
+    class="consoleSerial-0-2-1"
   >
     <div
       class="pf-v6-c-empty-state"
@@ -47,7 +47,7 @@ exports[`SerialConsole in the DISCONNECTED state 1`] = `
 exports[`SerialConsole in the LOADING state 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-serial"
+    class="consoleActionsSerial-0-2-2"
   >
     <button
       aria-disabled="false"
@@ -71,7 +71,7 @@ exports[`SerialConsole in the LOADING state 1`] = `
     </button>
   </div>
   <div
-    class="pf-v6-c-console__serial"
+    class="consoleSerial-0-2-1"
   >
     <div
       class="pf-v6-c-empty-state"
@@ -121,7 +121,7 @@ exports[`SerialConsole in the LOADING state 1`] = `
 exports[`SerialConsole with CONNECTED state renders 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-serial"
+    class="consoleActionsSerial-0-2-2"
   >
     <button
       aria-disabled="false"
@@ -145,10 +145,9 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
     </button>
   </div>
   <div
-    class="pf-v6-c-console__serial"
+    class="consoleSerial-0-2-1"
   >
     <div
-      class="pf-v6-c-console__xterm"
       role="list"
     >
       <div
