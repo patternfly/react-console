@@ -3,7 +3,7 @@
 exports[`Render SerialConsoleActions 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-serial"
+    class="consoleActionsSerial-0-2-1"
   >
     <button
       aria-disabled="false"
@@ -32,7 +32,7 @@ exports[`Render SerialConsoleActions 1`] = `
 exports[`Render SerialConsoleActions with custom texts 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__actions-serial"
+    class="consoleActionsSerial-0-2-1"
   >
     <button
       aria-disabled="false"

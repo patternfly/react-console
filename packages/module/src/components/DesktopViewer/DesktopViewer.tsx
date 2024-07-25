@@ -1,12 +1,19 @@
 import React from 'react';
 
-import { css } from '@patternfly/react-styles';
 import { ManualConnection } from './ManualConnection';
 import { ConnectWithRemoteViewer, ConnectWithRemoteViewerProps } from './ConnectWithRemoteViewer';
 import { ConsoleDetailPropType } from './ConsoleDetailPropType';
 
-import styles from '@patternfly/react-styles/css/components/Consoles/DesktopViewer';
-import '@patternfly/react-styles/css/components/Consoles/DesktopViewer.css';
+import { createUseStyles } from 'react-jss';
+
+const useStyles = createUseStyles({
+  consoleDesktopViewer: {
+    gridArea: 'main',
+    display: 'grid',
+    gap: 'var(--pf-t-global--spacer--md)',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(20rem, 1fr))'
+  }
+});
 
 export interface DesktopViewerProps extends ConnectWithRemoteViewerProps {
   /** Custom content of more-info section  */
@@ -51,7 +58,7 @@ export const DesktopViewer: React.FunctionComponent<DesktopViewerProps> = ({
   rdp = null,
   ...props
 }: DesktopViewerProps) => (
-  <div className={css(styles.consoleDesktopViewer)}>
+  <div className={useStyles().consoleDesktopViewer}>
     <ConnectWithRemoteViewer
       spice={spice}
       vnc={vnc}

@@ -3,7 +3,7 @@
 exports[`AccessConsoles Empty 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`AccessConsoles Empty 1`] = `
 exports[`AccessConsoles with DesktopViewer 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   />
 </DocumentFragment>
 `;
@@ -19,10 +19,10 @@ exports[`AccessConsoles with DesktopViewer 1`] = `
 exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   >
     <div
-      class="pf-v6-c-console__actions"
+      class="consoleActions-0-2-2"
     >
       <button
         aria-expanded="false"
@@ -62,7 +62,7 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   />
 </DocumentFragment>
 `;
@@ -70,7 +70,7 @@ exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 exports[`AccessConsoles with VncConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   />
 </DocumentFragment>
 `;
@@ -78,10 +78,10 @@ exports[`AccessConsoles with VncConsole as a single child 1`] = `
 exports[`AccessConsoles with preselected SerialConsole 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   >
     <div
-      class="pf-v6-c-console__actions-serial"
+      class="consoleActionsSerial-0-2-4"
     >
       <button
         aria-disabled="false"
@@ -105,7 +105,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
     </div>
     <div
-      class="pf-v6-c-console__serial"
+      class="consoleSerial-0-2-3"
     >
       <div
         class="pf-v6-c-empty-state"
@@ -156,7 +156,7 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
 exports[`AccessConsoles with wrapped SerialConsole as a child 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console"
+    class="console-0-2-1"
   >
     <p>
       Serial console text

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { css } from '@patternfly/react-styles';
 import { Button, EmptyState, Spinner, EmptyStateFooter } from '@patternfly/react-core';
 
 import { XTerm, XTermProps } from './XTerm';
@@ -8,11 +7,15 @@ import { SerialConsoleActions } from './SerialConsoleActions';
 
 import { constants } from '../common/constants';
 
-import styles from '@patternfly/react-styles/css/components/Consoles/SerialConsole';
-import '@patternfly/react-styles/css/components/Consoles/xterm.css';
-import '@patternfly/react-styles/css/components/Consoles/SerialConsole.css';
+import { createUseStyles } from 'react-jss';
 
 const { CONNECTED, DISCONNECTED, LOADING } = constants;
+
+const useStyles = createUseStyles({
+  consoleSerial: {
+    gridArea: 'main'
+  }
+});
 
 export interface SerialConsoleProps extends XTermProps {
   /** Initiate connection to backend. In other words, the calling components manages connection state. */
@@ -63,6 +66,8 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
   textLoading = 'Loading ...',
   innerRef
 }) => {
+  const styles = useStyles();
+
   React.useEffect(() => {
     onConnect();
     return () => {
@@ -130,7 +135,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
           textReset={textReset}
         />
       )}
-      <div className={css(styles.consoleSerial)}>{terminal}</div>
+      <div className={styles.consoleSerial}>{terminal}</div>
     </>
   );
 };

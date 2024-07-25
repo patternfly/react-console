@@ -3,7 +3,7 @@
 exports[`placeholder render test 1`] = `
 <DocumentFragment>
   <div
-    class="pf-v6-c-console__vnc"
+    class="consoleVnc-0-2-1"
   >
     <div>
       <div
