@@ -14,7 +14,7 @@ or
 ```
 npm install @patternfly/react-console --save
 ```
-
+  
 ### Usage
 
 It's strongly advised to use the PatternFly Base CSS in your whole project, or some components may diverge in appearance:
