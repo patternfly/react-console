@@ -369,7 +369,7 @@ pageData.examples = {
 
 const Component = () => (
   <React.Fragment>
-    <AutoLinkHeader {...{"id":"note","size":"h3","className":"ws-title ws-h3"}}>
+    <AutoLinkHeader {...{"id":"note","headingLevel":"h3","className":"ws-title ws-h3"}}>
       {`Note`}
     </AutoLinkHeader>
     <p {...{"className":"pf-v6-c-content--p ws-p "}}>
@@ -380,7 +380,7 @@ const Component = () => (
         </code>
       </PatternflyThemeLink>
     </p>
-    <AutoLinkHeader {...{"id":"examples","size":"h2","className":"ws-title ws-h2"}}>
+    <AutoLinkHeader {...{"id":"examples","headingLevel":"h2","className":"ws-title ws-h2"}}>
       {`Examples`}
     </AutoLinkHeader>
     {React.createElement(pageData.examples["Basic Usage"])}

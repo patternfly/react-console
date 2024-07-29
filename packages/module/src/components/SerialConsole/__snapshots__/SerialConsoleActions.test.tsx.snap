@@ -13,7 +13,11 @@ exports[`Render SerialConsoleActions 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      Disconnect
+      <span
+        class="pf-v6-c-button__text"
+      >
+        Disconnect
+      </span>
     </button>
     <button
       aria-disabled="false"
@@ -23,7 +27,11 @@ exports[`Render SerialConsoleActions 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      Reset
+      <span
+        class="pf-v6-c-button__text"
+      >
+        Reset
+      </span>
     </button>
   </div>
 </DocumentFragment>
@@ -42,7 +50,11 @@ exports[`Render SerialConsoleActions with custom texts 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      My Disconnect Text
+      <span
+        class="pf-v6-c-button__text"
+      >
+        My Disconnect Text
+      </span>
     </button>
     <button
       aria-disabled="false"
@@ -52,7 +64,11 @@ exports[`Render SerialConsoleActions with custom texts 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      My Reconnect Text
+      <span
+        class="pf-v6-c-button__text"
+      >
+        My Reconnect Text
+      </span>
     </button>
   </div>
 </DocumentFragment>

@@ -35,7 +35,11 @@ exports[`SerialConsole in the DISCONNECTED state 1`] = `
             data-ouia-safe="true"
             type="button"
           >
-            My text for Connect
+            <span
+              class="pf-v6-c-button__text"
+            >
+              My text for Connect
+            </span>
           </button>
         </div>
       </div>
@@ -57,7 +61,11 @@ exports[`SerialConsole in the LOADING state 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      Disconnect
+      <span
+        class="pf-v6-c-button__text"
+      >
+        Disconnect
+      </span>
     </button>
     <button
       aria-disabled="false"
@@ -67,7 +75,11 @@ exports[`SerialConsole in the LOADING state 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      Reset
+      <span
+        class="pf-v6-c-button__text"
+      >
+        Reset
+      </span>
     </button>
   </div>
   <div
@@ -131,7 +143,11 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      My text for Disconnect
+      <span
+        class="pf-v6-c-button__text"
+      >
+        My text for Disconnect
+      </span>
     </button>
     <button
       aria-disabled="false"
@@ -141,7 +157,11 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
       data-ouia-safe="true"
       type="button"
     >
-      Reset
+      <span
+        class="pf-v6-c-button__text"
+      >
+        Reset
+      </span>
     </button>
   </div>
   <div

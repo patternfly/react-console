@@ -1,5 +1,11 @@
 import React from 'react';
-import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
+import {
+  Dropdown,
+	DropdownItem,
+	DropdownList,
+	MenuToggle,
+	MenuToggleElement
+} from '@patternfly/react-core';
 
 export interface SpiceActionsProps extends React.HTMLProps<HTMLDivElement> {
   /** Callback for when Ctrl+Alt+Delete item is selected */

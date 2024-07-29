@@ -28,6 +28,9 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
         aria-expanded="false"
         aria-label="Console type toggle"
         class="pf-v6-c-menu-toggle"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-1"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         id="pf-v6-c-console__type-selector"
         style="width: 100%;"
         type="button"
@@ -91,7 +94,11 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
         data-ouia-safe="true"
         type="button"
       >
-        Disconnect
+        <span
+          class="pf-v6-c-button__text"
+        >
+          Disconnect
+        </span>
       </button>
       <button
         aria-disabled="false"
@@ -101,7 +108,11 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
         data-ouia-safe="true"
         type="button"
       >
-        Reset
+        <span
+          class="pf-v6-c-button__text"
+        >
+          Reset
+        </span>
       </button>
     </div>
     <div
