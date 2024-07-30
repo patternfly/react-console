@@ -1,6 +1,12 @@
 import React from 'react';
 import { Button, ButtonVariant } from '@patternfly/react-core';
-import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
+import {
+  Dropdown,
+  DropdownItem,
+	DropdownList,
+	MenuToggle,
+	MenuToggleElement
+} from '@patternfly/react-core';
 
 import { createUseStyles } from 'react-jss';
 

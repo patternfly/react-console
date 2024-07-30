@@ -1,5 +1,11 @@
 import React from 'react';
-import { Select, SelectOption, MenuToggle, MenuToggleElement, SelectList } from '@patternfly/react-core';
+import {
+	MenuToggle,
+	MenuToggleElement,
+  Select,
+	SelectOption,
+	SelectList
+} from '@patternfly/react-core';
 
 import { constants } from '../common/constants';
 import { createUseStyles } from 'react-jss';

@@ -126,7 +126,7 @@ exports[`DesktopViewer default MoreInformationContent 1`] = `
           <div>
             Download the MSI from 
             <a
-              href="https://virt-manager.org/download/"
+              href="https://virt-manager.org/download"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -160,7 +160,11 @@ exports[`DesktopViewer empty 1`] = `
           disabled=""
           type="button"
         >
-          Launch Remote Viewer
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Viewer
+          </span>
         </button>
       </div>
     </div>
@@ -205,7 +209,11 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
           data-ouia-safe="true"
           type="button"
         >
-          Launch Remote Viewer
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Viewer
+          </span>
         </button>
       </div>
       <div
@@ -360,7 +368,7 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
                   <div>
                     Download the MSI from 
                     <a
-                      href="https://virt-manager.org/download/"
+                      href="https://virt-manager.org/download"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -526,7 +534,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           data-ouia-safe="true"
           type="button"
         >
-          Launch Remote Viewer
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Viewer
+          </span>
         </button>
         <button
           aria-disabled="false"
@@ -536,7 +548,11 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           data-ouia-safe="true"
           type="button"
         >
-          Launch Remote Desktop
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Desktop
+          </span>
         </button>
       </div>
       <div
@@ -691,7 +707,7 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
                   <div>
                     Download the MSI from 
                     <a
-                      href="https://virt-manager.org/download/"
+                      href="https://virt-manager.org/download"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -942,7 +958,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           data-ouia-safe="true"
           type="button"
         >
-          Launch Remote Viewer
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Viewer
+          </span>
         </button>
         <button
           aria-disabled="false"
@@ -952,7 +972,11 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           data-ouia-safe="true"
           type="button"
         >
-          Launch Remote Desktop
+          <span
+            class="pf-v6-c-button__text"
+          >
+            Launch Remote Desktop
+          </span>
         </button>
       </div>
       <div
@@ -1107,7 +1131,7 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
                   <div>
                     Download the MSI from 
                     <a
-                      href="https://virt-manager.org/download/"
+                      href="https://virt-manager.org/download"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
