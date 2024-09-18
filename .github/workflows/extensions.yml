@@ -23,12 +23,15 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
+            const { Octokit } = require("@octokit/core");
+            const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
             try {
               const username = context.payload.issue.user.login;
               console.log(`Checking membership for user: ${username}`);
 
               // List all members of the team and check if the user is one of them
-              const { data: members } = await github.teams.listMembers({
+              const { data: members } = await octokit.request('GET /orgs/{org}/teams/{team_slug}/members', {
                 org: 'patternfly',
                 team_slug: 'frequent-flyers',
               });
