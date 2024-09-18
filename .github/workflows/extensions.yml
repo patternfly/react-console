@@ -27,20 +27,20 @@ jobs:
               const username = context.payload.issue.user.login;
               console.log(`Checking membership for user: ${username}`);
 
-              // Call GitHub API to check if the user is a member of the team
-              const membership = await github.teams.getMembershipForUserInOrg({
+              // List all members of the team and check if the user is one of them
+              const { data: members } = await github.teams.listMembers({
                 org: 'patternfly',
                 team_slug: 'frequent-flyers',
-                username: username
               });
 
-              console.log(`Membership state: ${membership.data.state}`);
-
-              // Return the result as an output
-              return membership.data.state === 'active' ? { is_team_member: 'true' } : { is_team_member: 'false' };
+              const isTeamMember = members.some(member => member.login === username);
+              
+              console.log(`User is ${isTeamMember ? '' : 'not '}a member of the team.`);
+              
+              return { is_team_member: isTeamMember ? 'true' : 'false' };
             } catch (error) {
               console.error(`Error checking team membership: ${error.message}`);
-              return { is_team_member: 'false' };  // Set false if there's any error
+              return { is_team_member: 'false' };
             }
 
       - name: Add label if user is a team member
