@@ -24,22 +24,25 @@ jobs:
         with:
           script: |
             try {
-              const { data: membership } = await github.teams.getMembershipForUserInOrg({
+              const username = context.payload.issue.user.login;
+              console.log(`Checking membership for user: ${username}`);
+
+              // Call GitHub API to check if the user is a member of the team
+              const membership = await github.teams.getMembershipForUserInOrg({
                 org: 'patternfly',
                 team_slug: 'frequent-flyers',
-                username: context.payload.issue.user.login
+                username: username
               });
-              console.log(context.payload.issue.user.login);
-              console.log(membership);
-              if (membership && membership.state === 'active') {
-                core.setOutput('is_team_member', 'true');
-              } else {
-                core.setOutput('is_team_member', 'false');
-              }
+
+              console.log(`Membership state: ${membership.data.state}`);
+
+              // Return the result as an output
+              return membership.data.state === 'active' ? { is_team_member: 'true' } : { is_team_member: 'false' };
             } catch (error) {
-              // If the user is not a team member, it will throw a 404 error
-              core.setOutput('is_team_member', 'false');
+              console.error(`Error checking team membership: ${error.message}`);
+              return { is_team_member: 'false' };  // Set false if there's any error
             }
+
       - name: Add label if user is a team member
         if: steps.check_team_membership.outputs.is_team_member == 'true'
         run: |
@@ -47,4 +50,4 @@ jobs:
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels \
-            -d '{"labels":["Frequent flyer"]}'
+            -d '{"labels":["Team Member"]}'
