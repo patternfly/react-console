@@ -20,28 +20,24 @@ jobs:
     steps:
       - name: Check if the author is on the team
         id: check_team_membership
-        run: |
-          const org = 'patternfly';
-          const team_slug = 'frequent-flyers';
-          const author = context.payload.issue.user.login;
-
-          try {
-            const { data: membership } = await github.teams.getMembershipForUserInOrg({
-              org: org,
-              team_slug: team_slug,
-              username: author
-            });
-
-            if (membership && membership.state === 'active') {
-              core.setOutput('is_team_member', 'true');
-            } else {
+        uses: actions/github-script@v6
+        with:
+          script: |
+            try {
+              const { data: membership } = await github.teams.getMembershipForUserInOrg({
+                org: 'patternfly',
+                team_slug: 'frequent-flyers',
+                username: context.payload.issue.user.login
+              });
+              if (membership && membership.state === 'active') {
+                core.setOutput('is_team_member', 'true');
+              } else {
+                core.setOutput('is_team_member', 'false');
+              }
+            } catch (error) {
+              // If the user is not a team member, it will throw a 404 error
               core.setOutput('is_team_member', 'false');
             }
-          } catch (error) {
-            // If the user is not a team member, it will throw a 404 error
-            core.setOutput('is_team_member', 'false');
-          }
-
       - name: Add label if user is a team member
         if: steps.check_team_membership.outputs.is_team_member == 'true'
         uses: actions-ecosystem/action-add-labels@v1
