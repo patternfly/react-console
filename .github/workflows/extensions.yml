@@ -18,39 +18,24 @@ jobs:
   label-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if the author is on the team
-        id: check_team_membership
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const { Octokit } = require("@octokit/core");
-            const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-
-            try {
-              const username = context.payload.issue.user.login;
-              console.log(`Checking membership for user: ${username}`);
-
-              // List all members of the team and check if the user is one of them
-              const { data: members } = await octokit.request('GET /orgs/{org}/teams/{team_slug}/members', {
-                org: 'patternfly',
-                team_slug: 'frequent-flyers',
-              });
-
-              const isTeamMember = members.some(member => member.login === username);
+    - name: Team Membership Checker
+      # You may pin to the exact commit or the version.
+      # uses: TheModdingInquisition/actions-team-membership@a69636a92bc927f32c3910baac06bacc949c984c
+      uses: TheModdingInquisition/actions-team-membership@v1.0
+      with:
+        # Repository token. GitHub Action token is used by default(recommended). But you can also use the other token(e.g. personal access token).
+        token: ${{ secrets.GH_READ_ORG_TOKEN }}
+        # The team to check for.
+        team: 'frequent-flyers'
+        # The organization of the team to check for. Defaults to the context organization.
+        organization: 'patternfly'
+        # If the action should exit if the user is not part of the team.
+        exit: true
               
-              console.log(`User is ${isTeamMember ? '' : 'not '}a member of the team.`);
-              
-              return { is_team_member: isTeamMember ? 'true' : 'false' };
-            } catch (error) {
-              console.error(`Error checking team membership: ${error.message}`);
-              return { is_team_member: 'false' };
-            }
-
-      - name: Add label if user is a team member
-        if: steps.check_team_membership.outputs.is_team_member == 'true'
-        run: |
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels \
-            -d '{"labels":["Team Member"]}'
+    - name: Add label if user is a team member
+      run: |
+        curl -X POST \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels \
+          -d '{"labels":["Frequent flyer"]}'
