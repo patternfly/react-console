@@ -29,8 +29,7 @@
   },
   "homepage": "https://github.com/patternfly/react-console/#readme",
   "publishConfig": {
-    "access": "public",
-    "tag": "prerelease"
+    "access": "public"
   },
   "dependencies": {
     "@novnc/novnc": "^1.5.0",
