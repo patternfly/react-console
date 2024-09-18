@@ -29,6 +29,8 @@ jobs:
                 team_slug: 'frequent-flyers',
                 username: context.payload.issue.user.login
               });
+              console.log(context.payload.issue.user.login);
+              console.log(membership);
               if (membership && membership.state === 'active') {
                 core.setOutput('is_team_member', 'true');
               } else {
