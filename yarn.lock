@@ -1563,12 +1563,12 @@
     puppeteer-cluster "^0.23.0"
     xmldoc "^1.1.2"
 
-"@patternfly/patternfly@6.0.0":
+"@patternfly/patternfly@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-6.0.0.tgz#c7c78db38ef1af6324cf742c282404cd71696d1e"
   integrity sha512-Mn92Tt/4okSj1COGCJrgUgh390OOaFCWf0tL0WmigDNUecSHNn1D6Vhpd1hxHQBXvre9eWorzxV2b9yhSEl79Q==
 
-"@patternfly/react-code-editor@6.0.0":
+"@patternfly/react-code-editor@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@patternfly/react-code-editor/-/react-code-editor-6.0.0.tgz#87d78b17bc858ad3b444aa1f14a6b3c7ffe1fd84"
   integrity sha512-TnI/NNkizzWTzdVZWmpyEPKXgsOoUeklk8Xlgtl7II/+5juLjlt0wXTMhL35F59Rzd0YohGs251zXAwJbn6vIQ==
@@ -1602,7 +1602,7 @@
   resolved "https://registry.yarnpkg.com/@patternfly/react-styles/-/react-styles-6.0.0.tgz#e388af342ee51cc2977721e91a6b0191c334c163"
   integrity sha512-fJFMB89sTRGlZTzTLmpRmthgOXqcN078scHMFJ3ttfi2D2btnem5oZrxmQ/gPZkZOxR+9MqwKDB6l3F5x1SqLQ==
 
-"@patternfly/react-table@6.0.0":
+"@patternfly/react-table@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@patternfly/react-table/-/react-table-6.0.0.tgz#7d81aa3e858892c32a6922baba881014547188f9"
   integrity sha512-LvWMzjcQZHdFUpK8fjj5EAFrNxqB8/MFd7gUUZu7AgYt6rmS2im4xk6yb7h0K7cAhY085oPeRF9lkYSCgzlRDg==

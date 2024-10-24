@@ -50,10 +50,10 @@
   },
   "devDependencies": {
     "@patternfly/documentation-framework": "6.0.0-alpha.108",
-    "@patternfly/patternfly": "6.0.0",
+    "@patternfly/patternfly": "^6.0.0",
     "@patternfly/patternfly-a11y": "^4.3.1",
-    "@patternfly/react-code-editor": "6.0.0",
-    "@patternfly/react-table": "6.0.0",
+    "@patternfly/react-code-editor": "^6.0.0",
+    "@patternfly/react-table": "^6.0.0",
     "monaco-editor": "^0.34.1",
     "rimraf": "^2.6.2",
     "serve": "^14.2.3"
