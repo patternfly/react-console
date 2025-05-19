@@ -152,7 +152,6 @@ exports[`DesktopViewer empty 1`] = `
         class="pf-v6-c-console__remote-viewer-launch"
       >
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-1"
           data-ouia-component-type="PF6/Button"
@@ -202,7 +201,6 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         class="pf-v6-c-console__remote-viewer-launch"
       >
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-2"
           data-ouia-component-type="PF6/Button"
@@ -224,7 +222,6 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
         >
           <button
             aria-controls="remote-viewer-details-content"
-            aria-disabled="false"
             aria-expanded="false"
             class="pf-v6-c-button pf-m-link"
             data-ouia-component-id="OUIA-Generated-Button-link-1"
@@ -539,7 +536,6 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         class="pf-v6-c-console__remote-viewer-launch"
       >
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-5"
           data-ouia-component-type="PF6/Button"
@@ -553,7 +549,6 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
           </span>
         </button>
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-rdp"
           data-ouia-component-id="OUIA-Generated-Button-primary-6"
           data-ouia-component-type="PF6/Button"
@@ -575,7 +570,6 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         >
           <button
             aria-controls="remote-viewer-details-content"
-            aria-disabled="false"
             aria-expanded="false"
             class="pf-v6-c-button pf-m-link"
             data-ouia-component-id="OUIA-Generated-Button-link-4"
@@ -752,7 +746,6 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
         >
           <button
             aria-controls="remote-desktop-details-content"
-            aria-disabled="false"
             aria-expanded="false"
             class="pf-v6-c-button pf-m-link"
             data-ouia-component-id="OUIA-Generated-Button-link-5"
@@ -987,7 +980,6 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         class="pf-v6-c-console__remote-viewer-launch"
       >
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-vv"
           data-ouia-component-id="OUIA-Generated-Button-primary-3"
           data-ouia-component-type="PF6/Button"
@@ -1001,7 +993,6 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
           </span>
         </button>
         <button
-          aria-disabled="false"
           class="pf-v6-c-button pf-m-primary pf-v6-c-console__remote-viewer-launch-rdp"
           data-ouia-component-id="OUIA-Generated-Button-primary-4"
           data-ouia-component-type="PF6/Button"
@@ -1023,7 +1014,6 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         >
           <button
             aria-controls="remote-viewer-details-content"
-            aria-disabled="false"
             aria-expanded="false"
             class="pf-v6-c-button pf-m-link"
             data-ouia-component-id="OUIA-Generated-Button-link-2"
@@ -1200,7 +1190,6 @@ exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
         >
           <button
             aria-controls="remote-desktop-details-content"
-            aria-disabled="false"
             aria-expanded="false"
             class="pf-v6-c-button pf-m-link"
             data-ouia-component-id="OUIA-Generated-Button-link-3"
