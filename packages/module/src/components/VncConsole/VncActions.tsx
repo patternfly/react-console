@@ -1,12 +1,6 @@
-import React from 'react';
+import { useState } from 'react';
 import { Button, ButtonVariant } from '@patternfly/react-core';
-import {
-  Dropdown,
-  DropdownItem,
-	DropdownList,
-	MenuToggle,
-	MenuToggleElement
-} from '@patternfly/react-core';
+import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
 
 import { createUseStyles } from 'react-jss';
 
@@ -38,7 +32,7 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
   onDisconnect,
   additionalButtons = []
 }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const styles = useStyles();
 
   const onToggleClick = () => {

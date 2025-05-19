@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { MoreInformationInstallVariant } from './MoreInformationInstallVariant';
 import { DescriptionList } from '@patternfly/react-core';
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { DescriptionListTerm, DescriptionListGroup, DescriptionListDescription } from '@patternfly/react-core';
 
 export interface MoreInformationInstallVariantProps {

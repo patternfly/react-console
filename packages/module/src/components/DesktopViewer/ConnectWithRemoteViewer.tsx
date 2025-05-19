@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Button, ExpandableSection } from '@patternfly/react-core';
 
 import { constants } from '../common/constants';
@@ -76,8 +76,8 @@ export const ConnectWithRemoteViewer: React.FunctionComponent<ConnectWithRemoteV
   textMoreRDPInfo = 'Remote Desktop Details',
   textMoreRDPInfoContent = ''
 }: ConnectWithRemoteViewerProps) => {
-  const [isExpandedDefault, setIsExpandedDefault] = React.useState(false);
-  const [isExpandedRDP, setIsExpandedRDP] = React.useState(false);
+  const [isExpandedDefault, setIsExpandedDefault] = useState(false);
+  const [isExpandedRDP, setIsExpandedRDP] = useState(false);
 
   const _console = spice || vnc; // strictly prefer spice over vnc
 

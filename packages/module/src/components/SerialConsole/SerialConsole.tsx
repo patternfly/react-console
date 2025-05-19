@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, forwardRef } from 'react';
 
 import { Button, EmptyState, Spinner, EmptyStateFooter } from '@patternfly/react-core';
 
@@ -68,7 +68,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
 }) => {
   const styles = useStyles();
 
-  React.useEffect(() => {
+  useEffect(() => {
     onConnect();
     return () => {
       onDisconnect();
@@ -140,7 +140,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
   );
 };
 SerialConsoleBase.displayName = 'SerialConsoleBase';
-export const SerialConsole = React.forwardRef((props: SerialConsoleProps, ref: React.Ref<HTMLDivElement>) => (
+export const SerialConsole = forwardRef((props: SerialConsoleProps, ref: React.Ref<HTMLDivElement>) => (
   <SerialConsoleBase innerRef={ref as React.MutableRefObject<any>} {...props} />
 ));
 SerialConsole.displayName = 'SerialConsole';

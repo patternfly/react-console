@@ -1,4 +1,4 @@
-import React, { useImperativeHandle } from 'react';
+import { useRef, useEffect, useCallback, useImperativeHandle } from 'react';
 
 import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
@@ -29,8 +29,8 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
   onData,
   innerRef
 }) => {
-  const terminalRef = React.useRef<Terminal>();
-  const ref = React.useRef<HTMLDivElement>();
+  const terminalRef = useRef<Terminal>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useImperativeHandle(innerRef, () => ({
     focusTerminal() {
@@ -61,7 +61,7 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
     }
   }));
 
-  const onBeforeUnload = React.useCallback((event: any) => {
+  const onBeforeUnload = useCallback((event: any) => {
     // Firefox requires this when the page is in an iframe
     event.preventDefault();
 
@@ -75,11 +75,11 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
     window.addEventListener('beforeunload', onBeforeUnload);
   };
 
-  const onFocusOut = React.useCallback(() => {
+  const onFocusOut = useCallback(() => {
     window.removeEventListener('beforeunload', onBeforeUnload);
   }, [onBeforeUnload]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fitAddon = new FitAddon();
     terminalRef.current = new Terminal({
       cols,

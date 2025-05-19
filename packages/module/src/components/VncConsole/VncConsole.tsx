@@ -1,4 +1,4 @@
-import React from 'react';
+import { useRef, useState, useCallback, useEffect, Fragment } from 'react';
 
 import { Button, EmptyState, Spinner, EmptyStateFooter } from '@patternfly/react-core';
 
@@ -102,17 +102,17 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
   textSendShortcut,
   textCtrlAltDel
 }) => {
-  const rfb = React.useRef<any>();
+  const rfb = useRef<any>(null);
   const styles = useStyles();
 
-  const novncElem = React.useRef<HTMLDivElement>(null);
-  const [status, setStatus] = React.useState(CONNECTING);
+  const novncElem = useRef<HTMLDivElement>(null);
+  const [status, setStatus] = useState(CONNECTING);
 
   const onConnected = () => {
     setStatus(CONNECTED);
   };
 
-  const _onDisconnected = React.useCallback(
+  const _onDisconnected = useCallback(
     (e: any) => {
       setStatus(DISCONNECTED);
       onDisconnected(e);
@@ -120,7 +120,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     [onDisconnected]
   );
 
-  const _onSecurityFailure = React.useCallback(
+  const _onSecurityFailure = useCallback(
     (e: any) => {
       setStatus(DISCONNECTED);
       onSecurityFailure(e);
@@ -134,7 +134,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     }
   };
 
-  const addEventListeners = React.useCallback(() => {
+  const addEventListeners = useCallback(() => {
     if (rfb.current) {
       rfb.current?.addEventListener('connect', onConnected);
       rfb.current?.addEventListener('disconnect', _onDisconnected);
@@ -142,7 +142,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     }
   }, [rfb, _onDisconnected, _onSecurityFailure]);
 
-  const removeEventListeners = React.useCallback(() => {
+  const removeEventListeners = useCallback(() => {
     if (rfb.current) {
       rfb.current.removeEventListener('connect', onConnected);
       rfb.current.removeEventListener('disconnect', _onDisconnected);
@@ -150,7 +150,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     }
   }, [rfb, _onDisconnected, _onSecurityFailure]);
 
-  const connect = React.useCallback(() => {
+  const connect = useCallback(() => {
     const protocol = encrypt ? 'wss' : 'ws';
     const url = `${protocol}://${host}:${port}/${path}`;
 
@@ -183,7 +183,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     credentials
   ]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     initLogging(vncLogging);
     try {
       connect();
@@ -242,12 +242,12 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
       {rightContent}
       <div className={styles.consoleVnc}>
         {children}
-        <React.Fragment>
+        <Fragment>
           <div>
             {emptyState}
             <div id={consoleContainerId} ref={novncElem} />
           </div>
-        </React.Fragment>
+        </Fragment>
       </div>
     </>
   );
