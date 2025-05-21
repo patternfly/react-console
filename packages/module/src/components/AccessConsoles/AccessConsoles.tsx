@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState, Children, Fragment } from 'react';
 import {
 	MenuToggle,
 	MenuToggleElement,
@@ -72,15 +72,15 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
     [VNC_CONSOLE_TYPE]: textVncConsole,
     [DESKTOP_VIEWER_CONSOLE_TYPE]: textDesktopViewerConsole
   };
-  const [type, setType] = React.useState(
+  const [type, setType] = useState(
     preselectedType !== NONE_TYPE ? { value: preselectedType, toString: () => typeMap[preselectedType] } : null
   );
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const getConsoleForType = (type: any) =>
-    React.Children.map(children as React.ReactElement[], (child: any) => {
+    Children.map(children as React.ReactElement[], (child: any) => {
       if (getChildTypeName(child) === type.value) {
-        return <React.Fragment key={getChildTypeName(child)}>{child}</React.Fragment>;
+        return <Fragment key={getChildTypeName(child)}>{child}</Fragment>;
       } else {
         return null;
       }
@@ -113,7 +113,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
   };
   const selectOptions: any[] = [];
 
-  React.Children.toArray(children as React.ReactElement[]).forEach((child: any) => {
+  Children.toArray(children as React.ReactElement[]).forEach((child: any) => {
     if (isChildOfType(child, VNC_CONSOLE_TYPE)) {
       selectOptions.push(
         <SelectOption
@@ -155,7 +155,7 @@ export const AccessConsoles: React.FunctionComponent<AccessConsolesProps> = ({
   });
   return (
     <div className={styles.console}>
-      {React.Children.toArray(children).length > 1 && (
+      {Children.toArray(children).length > 1 && (
         <div className={styles.consoleActions}>
           <Select
             aria-label={textSelectConsoleType}

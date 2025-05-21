@@ -1,5 +1,6 @@
 import React from 'react';
 import { AutoLinkHeader, Example, Link as PatternflyThemeLink } from '@patternfly/documentation-framework/components';
+import { useState, useRef, useEffect, useCallback, createRef } from 'react';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from '../../../content/extensions/react-console/examples/./SerialConsoleCustom.jsx';
 import { debounce } from '@patternfly/react-core';
@@ -352,6 +353,11 @@ const pageData = {
   ]
 };
 pageData.liveContext = {
+  useState,
+  useRef,
+  useEffect,
+  useCallback,
+  createRef,
   AccessConsoles,
   SerialConsole,
   VncConsole,
@@ -362,7 +368,7 @@ pageData.liveContext = {
 pageData.relativeImports = "import { SerialConsoleCustom } from 'content/extensions/react-console/examples/./SerialConsoleCustom.jsx';"
 pageData.examples = {
   'Basic Usage': props => 
-    <Example {...pageData} {...props} thumbnail={srcImportbasicusage} {...{"code":"import React from 'react';\nimport { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';\nimport { SerialConsoleCustom } from './SerialConsoleCustom.jsx';\nimport { debounce } from '@patternfly/react-core';\n\nAccessConsolesVariants = () => {\n  const [status, setStatus] = React.useState('disconnected');\n  const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;\n  const onConnect = React.useCallback(() => {\n    setStatus('loading');\n    setConnected();\n  }, [setConnected])\n  const onDisconnect = React.useCallback(() => setStatus('disconnected'), [])\n  const ref = React.createRef();\n\n  return (\n    <AccessConsoles preselectedType=\"SerialConsole\">\n      <VncConsole host=\"localhost\" port=\"9090\" encrypt shared />\n      <SerialConsole\n        onConnect={onConnect}\n        status={status}\n        onDisconnect={onDisconnect}\n        onData={data => {\n          ref.current.onDataReceived(data);\n        }}\n        ref={ref}\n      />\n      <SerialConsoleCustom type='Serial Console pty2' />\n      <DesktopViewer spice={{ address: '127.0.0.1', port: '5900' }} vnc={{ address: '127.0.0.1', port: '5901' }} />\n    </AccessConsoles>\n  );\n};","title":"Basic Usage","lang":"js","isFullscreen":true,"className":""}}>
+    <Example {...pageData} {...props} thumbnail={srcImportbasicusage} {...{"code":"import { useState, useRef, useCallback, createRef } from 'react';\nimport { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';\nimport { SerialConsoleCustom } from './SerialConsoleCustom.jsx';\nimport { debounce } from '@patternfly/react-core';\n\nAccessConsolesVariants = () => {\n  const [status, setStatus] = useState('disconnected');\n  const setConnected = useRef(debounce(() => setStatus('connected'), 3000)).current;\n  const onConnect = useCallback(() => {\n    setStatus('loading');\n    setConnected();\n  }, [setConnected])\n  const onDisconnect = useCallback(() => setStatus('disconnected'), [])\n  const ref = createRef();\n\n  return (\n    <AccessConsoles preselectedType=\"SerialConsole\">\n      <VncConsole host=\"localhost\" port=\"9090\" encrypt shared />\n      <SerialConsole\n        onConnect={onConnect}\n        status={status}\n        onDisconnect={onDisconnect}\n        onData={data => {\n          ref.current.onDataReceived(data);\n        }}\n        ref={ref}\n      />\n      <SerialConsoleCustom type='Serial Console pty2' />\n      <DesktopViewer spice={{ address: '127.0.0.1', port: '5900' }} vnc={{ address: '127.0.0.1', port: '5901' }} />\n    </AccessConsoles>\n  );\n};","title":"Basic Usage","lang":"js","isFullscreen":true,"className":""}}>
       
     </Example>
 };
@@ -372,7 +378,7 @@ const Component = () => (
     <AutoLinkHeader {...{"id":"note","headingLevel":"h3","className":"ws-title ws-h3"}}>
       {`Note`}
     </AutoLinkHeader>
-    <p {...{"className":"pf-v6-c-content--p ws-p "}}>
+    <p {...{"className":"pf-v6-c-content--p pf-m-editorial ws-p "}}>
       {`React console lives in its own package at `}
       <PatternflyThemeLink {...{"to":"https://www.npmjs.com/package/@patternfly/react-console","className":""}}>
         <code {...{"className":"ws-code "}}>

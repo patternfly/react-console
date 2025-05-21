@@ -1,11 +1,11 @@
-import React from 'react';
+import { useState, useRef, createRef } from 'react';
 import { debounce } from '@patternfly/react-core';
 import { SerialConsole } from '@patternfly/react-console';
 
 export const SerialConsoleCustom = () => {
-  const [status, setStatus] = React.useState('disconnected');
-  const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;
-  const ref2 = React.createRef();
+  const [status, setStatus] = useState('disconnected');
+  const setConnected = useRef(debounce(() => setStatus('connected'), 3000)).current;
+  const ref2 = createRef();
 
   return (
     <SerialConsole

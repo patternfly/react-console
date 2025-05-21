@@ -1,11 +1,5 @@
-import React from 'react';
-import {
-  Dropdown,
-	DropdownItem,
-	DropdownList,
-	MenuToggle,
-	MenuToggleElement
-} from '@patternfly/react-core';
+import { useState } from 'react';
+import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
 
 export interface SpiceActionsProps extends React.HTMLProps<HTMLDivElement> {
   /** Callback for when Ctrl+Alt+Delete item is selected */
@@ -20,7 +14,7 @@ export const SpiceActions: React.FunctionComponent<SpiceActionsProps> = ({
   textCtrlAltDel = 'Ctrl+Alt+Del',
   onCtrlAltDel
 }: SpiceActionsProps) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const onToggleClick = () => {
     setIsOpen(!isOpen);

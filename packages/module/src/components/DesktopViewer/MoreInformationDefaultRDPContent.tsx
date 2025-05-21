@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface MoreInformationDefaultRDPContentProps {
   textMoreRDPInfoContent?: string | React.ReactNode;
 }

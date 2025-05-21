@@ -1,4 +1,4 @@
-import React from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import { css } from '@patternfly/react-styles';
 import { SpiceMainConn, sendCtrlAltDel } from '@spice-project/spice-html5';
 
@@ -50,23 +50,26 @@ export const SpiceConsole: React.FunctionComponent<SpiceConsoleProps> = ({
   textCtrlAltDel
 }) => {
   let spiceStaticComponent: React.ReactNode;
-  const scRef = React.useRef<any>();
-  const [status, setStatus] = React.useState(CONNECTING);
+  const scRef = useRef<any>(null);
+  const [status, setStatus] = useState(CONNECTING);
 
-  const disconnect = React.useCallback(() => {
+  const disconnect = useCallback(() => {
     if (scRef.current) {
       scRef.current.stop();
       scRef.current = undefined;
     }
   }, [scRef]);
 
-  const onSpiceError = React.useCallback((e: any) => {
-    disconnect();
-    setStatus(DISCONNECTED);
-    onDisconnected(e);
-  }, [disconnect, setStatus, onDisconnected]);
+  const onSpiceError = useCallback(
+    (e: any) => {
+      disconnect();
+      setStatus(DISCONNECTED);
+      onDisconnected(e);
+    },
+    [disconnect, setStatus, onDisconnected]
+  );
 
-  React.useEffect(() => {
+  useEffect(() => {
     try {
       const protocol = encrypt ? 'wss' : 'ws';
       const uri = `${protocol}://${host}:${port}/${path}`;

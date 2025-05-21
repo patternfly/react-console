@@ -6,7 +6,6 @@ exports[`Render SerialConsoleActions 1`] = `
     class="consoleActionsSerial-0-2-1"
   >
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-1"
       data-ouia-component-type="PF6/Button"
@@ -20,7 +19,6 @@ exports[`Render SerialConsoleActions 1`] = `
       </span>
     </button>
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-2"
       data-ouia-component-type="PF6/Button"
@@ -43,7 +41,6 @@ exports[`Render SerialConsoleActions with custom texts 1`] = `
     class="consoleActionsSerial-0-2-1"
   >
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-3"
       data-ouia-component-type="PF6/Button"
@@ -57,7 +54,6 @@ exports[`Render SerialConsoleActions with custom texts 1`] = `
       </span>
     </button>
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-4"
       data-ouia-component-type="PF6/Button"

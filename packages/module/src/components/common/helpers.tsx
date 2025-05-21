@@ -1,6 +1,6 @@
-import React from 'react';
+import { Children } from 'react';
 
 export const child = (children: React.ReactNode, index: number) => {
-  const childrenArray = React.Children.toArray(children);
+  const childrenArray = Children.toArray(children);
   return (childrenArray && childrenArray.length > index && childrenArray[index]) || null;
 };

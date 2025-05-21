@@ -28,7 +28,6 @@ exports[`SerialConsole in the DISCONNECTED state 1`] = `
           class="pf-v6-c-empty-state__footer"
         >
           <button
-            aria-disabled="false"
             class="pf-v6-c-button pf-m-primary"
             data-ouia-component-id="OUIA-Generated-Button-primary-1"
             data-ouia-component-type="PF6/Button"
@@ -54,7 +53,6 @@ exports[`SerialConsole in the LOADING state 1`] = `
     class="consoleActionsSerial-0-2-2"
   >
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-1"
       data-ouia-component-type="PF6/Button"
@@ -68,7 +66,6 @@ exports[`SerialConsole in the LOADING state 1`] = `
       </span>
     </button>
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-2"
       data-ouia-component-type="PF6/Button"
@@ -136,7 +133,6 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
     class="consoleActionsSerial-0-2-2"
   >
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-3"
       data-ouia-component-type="PF6/Button"
@@ -150,7 +146,6 @@ exports[`SerialConsole with CONNECTED state renders 1`] = `
       </span>
     </button>
     <button
-      aria-disabled="false"
       class="pf-v6-c-button pf-m-secondary"
       data-ouia-component-id="OUIA-Generated-Button-secondary-4"
       data-ouia-component-type="PF6/Button"

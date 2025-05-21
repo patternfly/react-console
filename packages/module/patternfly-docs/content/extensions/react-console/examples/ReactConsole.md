@@ -10,6 +10,7 @@ sourceLink: https://github.com/patternfly/react-console
 ### Note
 React console lives in its own package at [`@patternfly/react-console`](https://www.npmjs.com/package/@patternfly/react-console)
 
+import { useState, useRef, useEffect, useCallback, createRef } from 'react';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
 import { debounce } from '@patternfly/react-core';
@@ -19,20 +20,20 @@ import '@patternfly/react-console/dist/css/xterm.css';
 
 ### Basic Usage
 ```js isFullscreen
-import React from 'react';
+import { useState, useRef, useCallback, createRef } from 'react';
 import { AccessConsoles, SerialConsole, VncConsole, DesktopViewer } from '@patternfly/react-console';
 import { SerialConsoleCustom } from './SerialConsoleCustom.jsx';
 import { debounce } from '@patternfly/react-core';
 
 AccessConsolesVariants = () => {
-  const [status, setStatus] = React.useState('disconnected');
-  const setConnected = React.useRef(debounce(() => setStatus('connected'), 3000)).current;
-  const onConnect = React.useCallback(() => {
+  const [status, setStatus] = useState('disconnected');
+  const setConnected = useRef(debounce(() => setStatus('connected'), 3000)).current;
+  const onConnect = useCallback(() => {
     setStatus('loading');
     setConnected();
   }, [setConnected])
-  const onDisconnect = React.useCallback(() => setStatus('disconnected'), [])
-  const ref = React.createRef();
+  const onDisconnect = useCallback(() => setStatus('disconnected'), [])
+  const ref = createRef();
 
   return (
     <AccessConsoles preselectedType="SerialConsole">
