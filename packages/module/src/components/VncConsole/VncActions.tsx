@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'flex-end',
-    columnGap: 'var(--pf-t-global--spacer--sm)'
+    columnGap: 'var(--pf-t--global--spacer--sm)'
   }
 });
 export interface VncActionProps {

@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
   consoleDesktopViewer: {
     gridArea: 'main',
     display: 'grid',
-    gap: 'var(--pf-t-global--spacer--md)',
+    gap: 'var(--pf-t--global--spacer--md)',
     gridTemplateColumns: 'repeat(auto-fit, minmax(20rem, 1fr))'
   }
 });

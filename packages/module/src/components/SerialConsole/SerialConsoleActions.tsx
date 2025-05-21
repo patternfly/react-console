@@ -9,7 +9,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'flex-end',
     '> button': {
-      marginRight: 'var(--pf-t-global--spacer--sm)'
+      marginRight: 'var(--pf-t--global--spacer--sm)'
     }
   }
 });

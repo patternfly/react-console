@@ -16,13 +16,13 @@ const useStyles = createUseStyles({
   console: {
     display: 'grid',
     gridTemplateAreas: '\'actions-main actions-extra\'\n    \'main main\'',
-    rowGap: 'var(--pf-t-global--spacer--md)'
+    rowGap: 'var(--pf-t--global--spacer--md)'
   },
   consoleActions: {
     gridArea: 'actions-main',
     display: 'flex',
     '> div': {
-      marginRight: 'var(--pf-t-global--spacer--sm)'
+      marginRight: 'var(--pf-t--global--spacer--sm)'
     }
   }
 });
