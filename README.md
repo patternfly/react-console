@@ -48,3 +48,7 @@ yarn test
 ```
 yarn publish
 ```
+
+### AI-assisted development guidelines
+
+Please reference [PatternFly's AI-assisted development guidelines](https://github.com/patternfly/.github/blob/main/CONTRIBUTING.md) if you'd like to contribute code generated using AI.
