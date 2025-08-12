@@ -48,6 +48,8 @@ export interface VncConsoleProps extends React.HTMLProps<HTMLDivElement> {
   credentials?: object;
   /** A DOMString specifying the ID to provide to any VNC repeater encountered */
   repeaterID?: string;
+  /** An Array of DOMStrings specifying the sub-protocols to use in the WebSocket connection */
+  wsProtocols?: string[];
   /** log-level for noVNC */
   vncLogging?: 'error' | 'warn' | 'none' | 'debug' | 'info';
   consoleContainerId?: string;
@@ -88,6 +90,7 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
   shared = false,
   credentials,
   repeaterID = '',
+  wsProtocols = [],
   vncLogging = 'warn',
   consoleContainerId,
   additionalButtons = [] as React.ReactNode[],
@@ -157,7 +160,8 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     const options = {
       repeaterID,
       shared,
-      credentials
+      credentials,
+      wsProtocols
     };
     rfb.current = new RFB(novncElem.current, url, options);
     addEventListeners();
@@ -180,7 +184,8 @@ export const VncConsole: React.FunctionComponent<VncConsoleProps> = ({
     rfb,
     repeaterID,
     shared,
-    credentials
+    credentials,
+    wsProtocols
   ]);
 
   useEffect(() => {
