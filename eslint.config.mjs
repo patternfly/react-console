@@ -18,7 +18,8 @@ export default [
       '**/.changelog/**',
       '**/coverage/**',
       '**/.tmp/**',
-      '**/generated/**'
+      '**/generated/**',
+      '**/.eslintcache'
     ]
   },
   js.configs.recommended,

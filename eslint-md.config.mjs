@@ -9,11 +9,7 @@ export default [
       '**/.cache/**',
       '**/node_modules/**',
       '**/generated/**',
-      '**/CHANGELOG.md',
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.ts',
-      '**/*.tsx'
+      '**/CHANGELOG.md'
     ]
   },
   {

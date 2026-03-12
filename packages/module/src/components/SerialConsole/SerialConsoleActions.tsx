@@ -14,12 +14,17 @@ export const SerialConsoleActions: React.FunctionComponent<SerialConsoleActionsP
 }: SerialConsoleActionsProps) => (
   <div
     className="console-actions-serial"
-    style={{ gridArea: 'actions-extra', display: 'flex', justifyContent: 'flex-end' }}
+    style={{
+      gridArea: 'actions-extra',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      gap: 'var(--pf-t--global--spacer--sm)'
+    }}
   >
-    <Button variant="secondary" onClick={props.onDisconnect} style={{ marginRight: 'var(--pf-t--global--spacer--sm)' }}>
+    <Button variant="secondary" onClick={props.onDisconnect}>
       {textDisconnect}
     </Button>
-    <Button variant="secondary" onClick={props.onReset} style={{ marginRight: 'var(--pf-t--global--spacer--sm)' }}>
+    <Button variant="secondary" onClick={props.onReset}>
       {textReset}
     </Button>
   </div>
