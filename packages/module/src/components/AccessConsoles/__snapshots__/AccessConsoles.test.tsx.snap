@@ -3,7 +3,9 @@
 exports[`AccessConsoles Empty 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   />
 </DocumentFragment>
 `;
@@ -11,7 +13,9 @@ exports[`AccessConsoles Empty 1`] = `
 exports[`AccessConsoles with DesktopViewer 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   />
 </DocumentFragment>
 `;
@@ -19,10 +23,13 @@ exports[`AccessConsoles with DesktopViewer 1`] = `
 exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   >
     <div
-      class="consoleActions-0-2-2"
+      class="console-actions"
+      style="grid-area: actions-main; display: flex; gap: var(--pf-t--global--spacer--sm);"
     >
       <button
         aria-expanded="false"
@@ -65,7 +72,9 @@ exports[`AccessConsoles with SerialConsole and VncConsole as children 1`] = `
 exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   />
 </DocumentFragment>
 `;
@@ -73,7 +82,9 @@ exports[`AccessConsoles with SerialConsole as a single child 1`] = `
 exports[`AccessConsoles with VncConsole as a single child 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   />
 </DocumentFragment>
 `;
@@ -81,10 +92,13 @@ exports[`AccessConsoles with VncConsole as a single child 1`] = `
 exports[`AccessConsoles with preselected SerialConsole 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   >
     <div
-      class="consoleActionsSerial-0-2-4"
+      class="console-actions-serial"
+      style="grid-area: actions-extra; display: flex; justify-content: flex-end; gap: var(--pf-t--global--spacer--sm);"
     >
       <button
         class="pf-v6-c-button pf-m-secondary"
@@ -114,7 +128,8 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
       </button>
     </div>
     <div
-      class="consoleSerial-0-2-3"
+      class="console-serial"
+      style="grid-area: main;"
     >
       <div
         class="pf-v6-c-empty-state"
@@ -165,7 +180,9 @@ exports[`AccessConsoles with preselected SerialConsole 1`] = `
 exports[`AccessConsoles with wrapped SerialConsole as a child 1`] = `
 <DocumentFragment>
   <div
-    class="console-0-2-1"
+    class="console"
+    style="display: grid; grid-template-areas: 'actions-main actions-extra'
+    'main main'; row-gap: var(--pf-t--global--spacer--md);"
   >
     <p>
       Serial console text
