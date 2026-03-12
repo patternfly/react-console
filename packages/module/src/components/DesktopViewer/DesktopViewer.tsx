@@ -2,17 +2,6 @@ import { ManualConnection } from './ManualConnection';
 import { ConnectWithRemoteViewer, ConnectWithRemoteViewerProps } from './ConnectWithRemoteViewer';
 import { ConsoleDetailPropType } from './ConsoleDetailPropType';
 
-import { createUseStyles } from 'react-jss';
-
-const useStyles = createUseStyles({
-  consoleDesktopViewer: {
-    gridArea: 'main',
-    display: 'grid',
-    gap: 'var(--pf-t--global--spacer--md)',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(20rem, 1fr))'
-  }
-});
-
 export interface DesktopViewerProps extends ConnectWithRemoteViewerProps {
   /** Custom content of more-info section  */
   children?: React.ReactNode;
@@ -56,7 +45,15 @@ export const DesktopViewer: React.FunctionComponent<DesktopViewerProps> = ({
   rdp = null,
   ...props
 }: DesktopViewerProps) => (
-  <div className={useStyles().consoleDesktopViewer}>
+  <div
+    className="console-desktop-viewer"
+    style={{
+      gridArea: 'main',
+      display: 'grid',
+      gap: 'var(--pf-t--global--spacer--md)',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(20rem, 1fr))'
+    }}
+  >
     <ConnectWithRemoteViewer
       spice={spice}
       vnc={vnc}

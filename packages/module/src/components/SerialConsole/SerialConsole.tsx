@@ -7,15 +7,7 @@ import { SerialConsoleActions } from './SerialConsoleActions';
 
 import { constants } from '../common/constants';
 
-import { createUseStyles } from 'react-jss';
-
 const { CONNECTED, DISCONNECTED, LOADING } = constants;
-
-const useStyles = createUseStyles({
-  consoleSerial: {
-    gridArea: 'main'
-  }
-});
 
 export interface SerialConsoleProps extends XTermProps {
   /** Initiate connection to backend. In other words, the calling components manages connection state. */
@@ -51,7 +43,6 @@ export interface SerialConsoleProps extends XTermProps {
 const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
   onConnect,
   onDisconnect,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   onTitleChanged = () => {},
   onData,
   cols,
@@ -66,8 +57,6 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
   textLoading = 'Loading ...',
   innerRef
 }) => {
-  const styles = useStyles();
-
   useEffect(() => {
     onConnect();
     return () => {
@@ -135,7 +124,7 @@ const SerialConsoleBase: React.FunctionComponent<SerialConsoleProps> = ({
           textReset={textReset}
         />
       )}
-      <div className={styles.consoleSerial}>{terminal}</div>
+      <div className="console-serial" style={{ gridArea: 'main' }}>{terminal}</div>
     </>
   );
 };

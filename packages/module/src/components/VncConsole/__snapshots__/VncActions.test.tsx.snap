@@ -1,9 +1,10 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
 <DocumentFragment>
   <div
-    class="consoleActionsVnc-0-2-1"
+    class="console-actions-vnc"
+    style="grid-area: actions-extra; display: flex; flex-wrap: wrap; justify-content: flex-end; column-gap: var(--pf-t--global--spacer--sm);"
   >
     <button
       aria-expanded="false"
@@ -60,7 +61,8 @@ exports[`VncActions VncActions renders correctly component hierarchy 1`] = `
 exports[`VncActions VncActions renders correctly html 1`] = `
 <DocumentFragment>
   <div
-    class="consoleActionsVnc-0-2-1"
+    class="console-actions-vnc"
+    style="grid-area: actions-extra; display: flex; flex-wrap: wrap; justify-content: flex-end; column-gap: var(--pf-t--global--spacer--sm);"
   >
     <button
       aria-expanded="false"
@@ -117,7 +119,8 @@ exports[`VncActions VncActions renders correctly html 1`] = `
 exports[`VncActions placeholder render test 1`] = `
 <DocumentFragment>
   <div
-    class="consoleActionsVnc-0-2-1"
+    class="console-actions-vnc"
+    style="grid-area: actions-extra; display: flex; flex-wrap: wrap; justify-content: flex-end; column-gap: var(--pf-t--global--spacer--sm);"
   >
     <button
       aria-expanded="false"

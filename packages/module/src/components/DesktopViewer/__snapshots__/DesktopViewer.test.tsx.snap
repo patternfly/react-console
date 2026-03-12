@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DesktopViewer default MoreInformationContent 1`] = `
 <DocumentFragment>
@@ -143,7 +143,8 @@ exports[`DesktopViewer default MoreInformationContent 1`] = `
 exports[`DesktopViewer empty 1`] = `
 <DocumentFragment>
   <div
-    class="consoleDesktopViewer-0-2-1"
+    class="console-desktop-viewer"
+    style="grid-area: main; display: grid; gap: var(--pf-t--global--spacer--md); grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -192,7 +193,8 @@ exports[`DesktopViewer empty 1`] = `
 exports[`DesktopViewer with Spice and VNC 1`] = `
 <DocumentFragment>
   <div
-    class="consoleDesktopViewer-0-2-1"
+    class="console-desktop-viewer"
+    style="grid-area: main; display: grid; gap: var(--pf-t--global--spacer--md); grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -527,7 +529,8 @@ exports[`DesktopViewer with Spice and VNC 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 <DocumentFragment>
   <div
-    class="consoleDesktopViewer-0-2-1"
+    class="console-desktop-viewer"
+    style="grid-area: main; display: grid; gap: var(--pf-t--global--spacer--md); grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));"
   >
     <div
       class="pf-v6-c-console__remote-viewer"
@@ -971,7 +974,8 @@ exports[`DesktopViewer with Spice, VNC and RDP (different hostname) 1`] = `
 exports[`DesktopViewer with Spice, VNC and RDP 1`] = `
 <DocumentFragment>
   <div
-    class="consoleDesktopViewer-0-2-1"
+    class="console-desktop-viewer"
+    style="grid-area: main; display: grid; gap: var(--pf-t--global--spacer--md); grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));"
   >
     <div
       class="pf-v6-c-console__remote-viewer"

@@ -2,17 +2,6 @@ import { useState } from 'react';
 import { Button, ButtonVariant } from '@patternfly/react-core';
 import { Dropdown, DropdownItem, DropdownList, MenuToggle, MenuToggleElement } from '@patternfly/react-core';
 
-import { createUseStyles } from 'react-jss';
-
-const useStyles = createUseStyles({
-  consoleActionsVnc: {
-    gridArea: 'actions-extra',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-end',
-    columnGap: 'var(--pf-t--global--spacer--sm)'
-  }
-});
 export interface VncActionProps {
   onDisconnect: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   onCtrlAltDel: () => void;
@@ -33,7 +22,6 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
   additionalButtons = []
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const styles = useStyles();
 
   const onToggleClick = () => {
     setIsOpen(!isOpen);
@@ -43,7 +31,16 @@ export const VncActions: React.FunctionComponent<VncActionProps> = ({
     setIsOpen(false);
   };
   const toolbar = (
-    <div className={styles.consoleActionsVnc}>
+    <div
+      className="console-actions-vnc"
+      style={{
+        gridArea: 'actions-extra',
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'flex-end',
+        columnGap: 'var(--pf-t--global--spacer--sm)'
+      }}
+    >
       {additionalButtons}
       <Dropdown
         id="pf-v6-c-console__send-shortcut"
