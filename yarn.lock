@@ -3432,10 +3432,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@novnc/novnc@npm:^1.5.0":
-  version: 1.6.0
-  resolution: "@novnc/novnc@npm:1.6.0"
-  checksum: 10c0/b014445548b769e66e33f0f60ec6a1676aeff9cad509c371b4fa6b00b496a8b8a9df15707411230df72ed205d819eca08c6555b67717a805fb8043045c831d08
+"@novnc/novnc@npm:1.5.0":
+  version: 1.5.0
+  resolution: "@novnc/novnc@npm:1.5.0"
+  checksum: 10c0/811a1b3b6a0bfbef3092babb8b1b1febc0273c79abd1902231558194d64125d5fa7f36219e45d94b78fbae6f5444bc39637909f4aa7d96691479dca27b9052c9
   languageName: node
   linkType: hard
 
@@ -3636,7 +3636,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@patternfly/react-console@workspace:packages/module"
   dependencies:
-    "@novnc/novnc": "npm:^1.5.0"
+    "@novnc/novnc": "npm:1.5.0"
     "@patternfly/documentation-framework": "npm:6.0.0-alpha.108"
     "@patternfly/patternfly": "npm:^6.0.0"
     "@patternfly/patternfly-a11y": "npm:^4.3.1"

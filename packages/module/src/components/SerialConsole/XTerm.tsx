@@ -80,6 +80,11 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
   }, [onBeforeUnload]);
 
   useEffect(() => {
+    const container = ref.current;
+    if (!container) {
+      return;
+    }
+
     const fitAddon = new FitAddon();
     terminalRef.current = new Terminal({
       cols,
@@ -92,8 +97,8 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
 
     const onWindowResize = () => {
       const geometry = fitAddon.proposeDimensions();
-      if (geometry) {
-        terminalRef.current.resize(geometry.rows, geometry.cols);
+      if (geometry && terminalRef.current) {
+        terminalRef.current.resize(geometry.cols, geometry.rows);
       }
     };
 
@@ -107,29 +112,45 @@ export const XTerm: React.FunctionComponent<XTermProps> = ({
 
     terminalRef.current.loadAddon(fitAddon);
 
-    terminalRef.current.open(ref.current);
+    let resizeListener: (() => void) | null = null;
 
-    const resizeListener = debounce(onWindowResize, 100);
-
-    if (!rows) {
-      if (canUseDOM) {
+    // Defer open so the container is laid out and xterm's renderer has valid dimensions
+    // before Viewport._innerRefresh runs (avoids "Cannot read properties of undefined (reading 'dimensions')")
+    const rafId = requestAnimationFrame(() => {
+      if (!container.isConnected || !terminalRef.current) {
+        return;
+      }
+      terminalRef.current.open(container);
+      resizeListener = !rows ? debounce(onWindowResize, 100) : null;
+      if (resizeListener && canUseDOM) {
         window.addEventListener('resize', resizeListener);
       }
-      onWindowResize();
-    }
-    terminalRef.current.focus();
+      if (!rows) {
+        onWindowResize();
+      }
+      terminalRef.current?.focus();
+    });
 
     return () => {
-      terminalRef.current.dispose();
-      if (canUseDOM) {
+      cancelAnimationFrame(rafId);
+      if (resizeListener && canUseDOM) {
         window.removeEventListener('resize', resizeListener);
       }
+      terminalRef.current?.dispose();
+      terminalRef.current = null;
       onFocusOut();
     };
   }, [cols, fontFamily, fontSize, onData, onFocusOut, onTitleChanged, rows]);
 
   // ensure react never reuses this div by keying it with the terminal widget
   // Workaround for xtermjs/xterm.js#3172
-  return <div ref={ref} role="list" onFocus={onFocusIn} onBlur={onFocusOut} />;
+  return (
+    <div
+      ref={ref}
+      role="list"
+      onFocus={onFocusIn}
+      onBlur={onFocusOut}
+    />
+  );
 };
 XTerm.displayName = 'XTerm';
