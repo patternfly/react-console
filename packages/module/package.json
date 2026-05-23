@@ -35,7 +35,7 @@
     "tag": "prerelease"
   },
   "dependencies": {
-    "@novnc/novnc": "1.5.0",
+    "@novnc/novnc": "1.7.0",
     "@patternfly/react-core": "^6.0.0",
     "@patternfly/react-styles": "^6.0.0",
     "@spice-project/spice-html5": "^0.2.1",
